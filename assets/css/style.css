@@ -249,7 +249,7 @@ p { color: var(--text2); }
   align-items: center;
   border-radius: 8px;
   overflow: hidden;
-  background: #080808; /* keeps logo readable in light mode */
+  background: #080808;
   transition: opacity var(--t), box-shadow var(--t);
 }
 .nav-logo:hover {
@@ -257,11 +257,15 @@ p { color: var(--text2); }
   box-shadow: 0 0 16px rgba(0,212,255,0.3);
 }
 .nav-logo-img {
-  height: 46px;
+  height: 58px;
   width: auto;
   display: block;
-  /* screen blend makes the black background invisible on any background */
 }
+
+/* Tally form theme switching */
+.tally-light { display: none; }
+[data-theme="light"] .tally-dark  { display: none; }
+[data-theme="light"] .tally-light { display: block; }
 
 /* Facebook follow card — matches .insta-card style */
 .fb-card {

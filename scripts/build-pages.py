@@ -20,7 +20,7 @@ NAV = """
   <div class="container">
     <div class="nav-inner">
       <a href="./" class="nav-logo" aria-label="Wall Envy Home">
-        <img src="assets/images/logo-banner.png" alt="Wall Envy" class="nav-logo-img">
+        <img src="assets/images/logo-text.png" alt="Wall Envy" class="nav-logo-img">
       </a>
       <ul class="nav-links">
         <li><a href="./" class="nav-link" data-path="/">Home</a></li>
@@ -1019,8 +1019,13 @@ PAGES["contact.html"] = page(
       <!-- RIGHT: Tally Form -->
       <div>
         <h3 style="margin-bottom:1.5rem;">Reach out to Begin Your Free Consultation</h3>
-        <div class="tally-wrapper">
+        <!-- Dark mode form -->
+        <div class="tally-wrapper tally-dark">
           <iframe data-tally-src="https://tally.so/embed/b5XJM2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="867" frameborder="0" marginheight="0" marginwidth="0" title="Reach out to Begin Your Free Consultation"></iframe>
+        </div>
+        <!-- Light mode form -->
+        <div class="tally-wrapper tally-light">
+          <iframe data-tally-src="https://tally.so/embed/ja4xq1?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="867" frameborder="0" marginheight="0" marginwidth="0" title="Reach out to Begin Your Free Consultation"></iframe>
         </div>
         <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
       </div>
@@ -1035,107 +1040,106 @@ PAGES["contact.html"] = page(
 
 PAGES["about.html"] = page(
     "About Us",
-    "Wall Envy is a family-owned direct-to-wall printing business based on the Central Coast of NSW. Meet the team behind the technology.",
-    inner_hero("Our Story", 'About <span class="gradient-text">Wall Envy</span>', "A family-owned business where carpentry craftsmanship meets interior design expertise.") + """
+    "Wall Envy is a proudly family-owned direct-to-wall printing business based on the Central Coast of NSW. Meet the four equal partners behind the technology.",
+    inner_hero("Our Story", 'About <span class="gradient-text">Wall Envy</span>', "Transforming blank walls into masterpieces &mdash; a family-owned business built on honesty, craftsmanship, and creative vision.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
 
-    <!-- Hero intro -->
+    <!-- Intro -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem;">
       <div class="reveal">
-        <span class="section-label">Who We Are</span>
-        <h2 style="margin-bottom:1.25rem;">Craftsmanship Meets <span class="gradient-text">Creative Vision</span></h2>
-        <p style="font-size:1.05rem;margin-bottom:1rem;">Wall Envy is a family-owned direct-to-wall printing business serving the Central Coast and Hunter regions of NSW, Australia. We combine two powerful professional backgrounds — Nicole&rsquo;s eye for interior design and our team&rsquo;s decades of professional carpentry and surface expertise — to deliver wall transformations that are truly one of a kind.</p>
-        <p>We&rsquo;re not just a printing company. We&rsquo;re craftspeople who understand surfaces, spaces, and the power of a well-executed design. Every project we take on is backed by a genuine commitment to quality, from the initial consultation right through to the final reveal.</p>
+        <span class="section-label">Welcome to Wall Envy</span>
+        <h2 style="margin-bottom:1.25rem;">Transforming Blank Walls into <span class="gradient-text">Masterpieces</span></h2>
+        <p style="font-size:1.05rem;margin-bottom:1rem;">Wall Envy is a proudly family-owned and operated direct-to-wall printing business based right here on the Central Coast. Founded as an equal partnership by our family of four, we combine decades of hands-on trade experience, high-end interior design expertise, and cutting-edge digital technology to bring custom artwork, murals, and architectural textures directly to your walls.</p>
+        <p>Whether we are adding a stunning feature wall to a residential home or creating an immersive, branded space for a local business, we treat every single project with the care and attention to detail that only a true family business can provide.</p>
       </div>
       <div class="reveal reveal-delay-2">
         <img src="assets/images/projects/proj-05.jpg" alt="Wall Envy project" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
       </div>
     </div>
 
-    <!-- The team -->
-    <div style="margin-bottom:4rem;">
-      <h3 class="reveal" style="margin-bottom:2rem;">The People Behind the <span class="gradient-text">Print</span></h3>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
-        <div class="card card-glow reveal">
-          <div style="font-size:2.5rem;margin-bottom:1rem;">&#127775;</div>
-          <h4 style="margin-bottom:0.5rem;">Interior Design &amp; Client Consulting</h4>
-          <p>Nicole brings a background in interior styling and design, working directly with clients to understand their vision, curate the perfect artwork, select colour palettes, and ensure every design fits seamlessly within the existing space. She doesn&rsquo;t just take a brief &mdash; she helps shape it into something exceptional.</p>
-        </div>
-        <div class="card card-glow reveal reveal-delay-1">
-          <div style="font-size:2.5rem;margin-bottom:1rem;">&#128296;</div>
-          <h4 style="margin-bottom:0.5rem;">Surface Preparation &amp; Precision Printing</h4>
-          <p>Backed by years of professional experience at J. Yates Carpentry, our team ensures every surface is perfectly prepared, patched, and primed before a single drop of ink is applied. A premium print requires a flawless foundation &mdash; and our carpentry expertise means we deliver exactly that, every time.</p>
-        </div>
+    <!-- Story & Vision -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem;">
+      <div class="card reveal">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">&#127959;</div>
+        <h3 style="margin-bottom:0.75rem;">Our Story &amp; Vision</h3>
+        <p>Wall Envy was born from a shared desire to build something meaningful together as a family, while helping other families and business owners create truly unique, inspiring spaces. Our goal is to become the undisputed masters of direct-to-wall printing across the Central Coast and Hunter region, delivering flawless, high-end finishes that traditional wallpaper or vinyl simply can&rsquo;t match.</p>
+      </div>
+      <div class="card reveal reveal-delay-1" style="border-left:3px solid var(--cyan);">
+        <div style="font-size:2rem;margin-bottom:0.75rem;">&#128172;</div>
+        <h3 style="margin-bottom:0.75rem;">Our Mission</h3>
+        <p style="font-style:italic;font-size:1rem;color:var(--text);">&ldquo;Our mission is simple: to help people elevate and improve their spaces &mdash; be it at home or at work. We pride ourselves on old-fashioned business values: unwavering honesty, always responding to your calls, and delivering a flawless quality of work on every single job.&rdquo;</p>
       </div>
     </div>
 
-    <!-- Technology -->
+    <!-- Team -->
     <div style="margin-bottom:4rem;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
-        <div class="reveal reveal-delay-1">
-          <img src="assets/images/projects/proj-17.jpg" alt="Wall Envy printing technology" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
-        </div>
-        <div class="reveal">
-          <span class="section-label">Our Technology</span>
-          <h3 style="margin-bottom:1.25rem;">German-Engineered <span class="gradient-text">UV Precision</span></h3>
-          <div class="feature-list">
-            <div class="feature-item">
-              <div class="feature-icon">&#127759;</div>
-              <div><h4>Direct-to-Surface Printing</h4><p>Our advanced vertical printer attaches directly to your wall and prints with laser-accurate alignment &mdash; accommodating heights of up to 4 metres.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">&#9889;</div>
-              <div><h4>Instant UV Cure</h4><p>Ink is cured with UV light the moment it leaves the print head. Dry instantly, no odour, no off-gassing &mdash; safe for homes, schools, and clinics immediately after we leave.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">&#127807;</div>
-              <div><h4>Eco-Friendly Inks</h4><p>German-engineered, low-VOC, non-toxic inks that bond permanently to the surface. No peeling, no seams, no harmful chemicals &mdash; ever.</p></div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">&#127959;</div>
-              <div><h4>Any Surface</h4><p>Plasterboard, brick, glass, concrete, timber, metal, tiles &mdash; if it&rsquo;s vertical, there&rsquo;s an excellent chance we can print on it.</p></div>
-            </div>
+      <div class="text-center reveal" style="margin-bottom:2.5rem;">
+        <span class="section-label">Meet the Partners</span>
+        <h2>The People Behind the <span class="gradient-text">Print</span></h2>
+        <p style="max-width:600px;margin:0.75rem auto 0;">We are four equal partners, each bringing a highly specialised set of skills to ensure your Wall Envy experience is seamless from design to print.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;">
+        <div class="card card-glow reveal" style="border-top:3px solid var(--cyan);">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(0,212,255,0.05));border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">&#128296;</div>
+            <div><h4 style="margin:0;">Jon</h4><span style="font-size:0.75rem;color:var(--cyan);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Structural &amp; Project Expertise</span></div>
           </div>
+          <p style="font-size:0.9rem;">With a strong background in skilled carpentry and high-end building projects, Jon brings a precise, structural eye for detail to every job. He understands the mechanics of residential and commercial spaces, ensuring that every print is executed flawlessly on any surface.</p>
+        </div>
+        <div class="card card-glow reveal reveal-delay-1" style="border-top:3px solid var(--magenta);">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(255,0,128,0.15),rgba(255,0,128,0.05));border:1px solid rgba(255,0,128,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">&#127912;</div>
+            <div><h4 style="margin:0;">Nicole</h4><span style="font-size:0.75rem;color:var(--magenta);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Interior Design &amp; Aesthetics</span></div>
+          </div>
+          <p style="font-size:0.9rem;">Nicole is our creative force. Drawing on her extensive interior design expertise, she works closely with clients to select the perfect aesthetics, colours, and textures to complement their specific space. Together with Jon, she bridges the gap between structural integrity and beautiful design.</p>
+        </div>
+        <div class="card card-glow reveal reveal-delay-2" style="border-top:3px solid var(--orange);">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(255,98,0,0.15),rgba(255,98,0,0.05));border:1px solid rgba(255,98,0,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">&#127968;</div>
+            <div><h4 style="margin:0;">Arianne</h4><span style="font-size:0.75rem;color:var(--orange);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Visual Design &amp; Property Specialist</span></div>
+          </div>
+          <p style="font-size:0.9rem;">At 27, our daughter Arianne brings an incredible dual-perspective to Wall Envy. Holding a degree in Graphic Arts, she has a brilliant eye for visual layout and high-definition imagery. Alongside her design background, Arianne holds her Real Estate Licence and works as a Property Manager &mdash; her deep understanding of the local property market means she knows exactly what kinds of finishes add genuine value and &ldquo;wow&rdquo; factor to any space.</p>
+        </div>
+        <div class="card card-glow reveal reveal-delay-3" style="border-top:3px solid var(--purple);">
+          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
+            <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(153,0,255,0.15),rgba(153,0,255,0.05));border:1px solid rgba(153,0,255,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">&#128187;</div>
+            <div><h4 style="margin:0;">David</h4><span style="font-size:0.75rem;color:#c460ff;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Technical Operations &amp; Development</span></div>
+          </div>
+          <p style="font-size:0.9rem;">Our future son-in-law David (33) is the technological backbone of the business. Armed with a degree in Computer Science and working as a full-stack software developer for HP Inc., David manages our website and digital backend and ensures our cutting-edge printing technology runs with precision &mdash; guaranteeing a high-tech, seamless experience from the first click to the final print.</p>
         </div>
       </div>
     </div>
 
     <!-- Values -->
-    <div style="margin-bottom:4rem;">
+    <div style="margin-bottom:3rem;">
       <h3 class="reveal text-center" style="margin-bottom:2rem;">What We Stand <span class="gradient-text">For</span></h3>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;">
         <div class="card reveal text-center">
           <div style="font-size:2rem;margin-bottom:0.75rem;">&#129309;</div>
-          <h4 style="margin-bottom:0.5rem;">Family Values</h4>
-          <p style="font-size:0.9rem;">We treat every client project with the same care and pride we would give our own home. Your space matters to us.</p>
+          <h4 style="margin-bottom:0.5rem;">Family Business</h4>
+          <p style="font-size:0.9rem;">A true equal partnership of four. We treat every client project with the care and pride we&rsquo;d give our own home.</p>
         </div>
         <div class="card reveal reveal-delay-1 text-center">
-          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128269;</div>
-          <h4 style="margin-bottom:0.5rem;">Attention to Detail</h4>
-          <p style="font-size:0.9rem;">From surface preparation to final reveal, we don&rsquo;t cut corners. Every millimetre is calibrated, every edge is perfect.</p>
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128222;</div>
+          <h4 style="margin-bottom:0.5rem;">Always Available</h4>
+          <p style="font-size:0.9rem;">Old-fashioned business values &mdash; we always respond to your calls. No chasing, no excuses, no surprises.</p>
         </div>
         <div class="card reveal reveal-delay-2 text-center">
-          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128444;&#65039;</div>
-          <h4 style="margin-bottom:0.5rem;">Digital Proofing</h4>
-          <p style="font-size:0.9rem;">You&rsquo;ll always see a digital mockup of your design in your actual space before we print a single drop of ink.</p>
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#127775;</div>
+          <h4 style="margin-bottom:0.5rem;">Flawless Quality</h4>
+          <p style="font-size:0.9rem;">Every single job. We don&rsquo;t cut corners. Every millimetre is calibrated, every edge is perfect.</p>
         </div>
         <div class="card reveal reveal-delay-3 text-center">
-          <div style="font-size:2rem;margin-bottom:0.75rem;">&#127759;</div>
-          <h4 style="margin-bottom:0.5rem;">Local Business</h4>
-          <p style="font-size:0.9rem;">We&rsquo;re proud to serve the Central Coast and Hunter communities. Local expertise, local pride.</p>
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128205;</div>
+          <h4 style="margin-bottom:0.5rem;">Proudly Local</h4>
+          <p style="font-size:0.9rem;">Central Coast born and based. We&rsquo;re invested in our community and proud to serve the people around us.</p>
         </div>
       </div>
     </div>
 
-    <!-- Service area -->
-    <div class="highlight-box reveal text-center" style="margin-bottom:2rem;">
-      <h4 style="margin-bottom:0.5rem;">&#128205; Our Service Area</h4>
-      <p style="margin:0;">We proudly serve the <strong>Central Coast</strong> and <strong>Hunter regions</strong> of NSW, Australia &mdash; including residential, commercial, and institutional clients across the area. Have a project further afield? <a href="contact.html" style="color:var(--cyan);">Get in touch</a> and we&rsquo;ll see what we can arrange.</p>
-    </div>
-
   </div>
-</section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let's talk about what we can create together.", "Book Free Consultation")
+</section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let&rsquo;s talk about what we can create together.", "Book Free Consultation")
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────
