@@ -10,8 +10,8 @@ import os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # /wallenvy/  -> GitHub Pages subdirectory (djtaylor333.github.io/wallenvy/)
-# /           -> Custom domain root (wallenvy.com.au) — change when going live
-BASE_HREF = '/wallenvy/'
+# /           -> Custom domain root (wallenvy.com.au)
+BASE_HREF = '/'
 
 # ─── Shared HTML Fragments ──────────────────────────────────────────────────
 
