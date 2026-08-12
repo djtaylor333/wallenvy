@@ -262,8 +262,10 @@ p { color: var(--text2); }
   display: block;
 }
 
-/* Tally form theme switching */
+/* Tally form theme switching — JS (syncTallyForms) handles runtime toggling;
+   CSS provides the initial-render default so there's no flash of both forms. */
 .tally-light { display: none; }
+.tally-dark  { display: block; }
 [data-theme="light"] .tally-dark  { display: none; }
 [data-theme="light"] .tally-light { display: block; }
 

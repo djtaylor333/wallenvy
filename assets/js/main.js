@@ -139,6 +139,32 @@
     }, 150);
   }
 
+  /* ---- Tally Form Theme Sync ---- */
+  function syncTallyForms() {
+    const darkWrap  = document.querySelector('.tally-dark');
+    const lightWrap = document.querySelector('.tally-light');
+    if (!darkWrap || !lightWrap) return;
+
+    const theme     = document.documentElement.getAttribute('data-theme') || 'dark';
+    const isLight   = theme === 'light';
+    const toShow    = isLight ? lightWrap : darkWrap;
+    const toHide    = isLight ? darkWrap  : lightWrap;
+
+    // Force hide with inline style (overrides any Tally-injected styles)
+    toHide.style.cssText  = 'display:none!important;height:0;overflow:hidden;';
+    toShow.style.cssText  = 'display:block;';
+
+    // Reload the newly-visible iframe so Tally calculates its full height
+    const iframe = toShow.querySelector('iframe');
+    if (iframe) {
+      const src = iframe.src || iframe.dataset.tallySrc;
+      if (src) {
+        iframe.src = '';
+        requestAnimationFrame(() => { iframe.src = src; });
+      }
+    }
+  }
+
   /* ---- Nav ---- */
   function initNav() {
     const burger     = document.getElementById('nav-burger');
@@ -178,6 +204,7 @@
       themeBtn.addEventListener('click', () => {
         const cur = document.documentElement.getAttribute('data-theme') || 'dark';
         applyTheme(cur === 'dark' ? 'light' : 'dark');
+        syncTallyForms(); // swap Tally form to match new theme
       });
     }
 
@@ -212,6 +239,7 @@
     initFaq();
     initLightbox();
     initReveal();
+    syncTallyForms(); // show correct Tally form for current theme on page load
 
     // Cookie consent
     const consent = getConsent();
