@@ -245,16 +245,20 @@ p { color: var(--text2); }
 /* Logo */
 .nav-logo {
   flex-shrink: 0;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.85rem;
-  letter-spacing: 0.15em;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
   transition: opacity var(--t);
 }
 .nav-logo:hover { opacity: 0.85; }
+
+.nav-logo-img {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 0 12px rgba(0,212,255,0.2);
+}
 
 /* Desktop Nav Links */
 .nav-links {

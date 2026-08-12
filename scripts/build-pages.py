@@ -19,7 +19,9 @@ NAV = """
 <nav class="site-nav" id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="./" class="nav-logo">WALL ENVY</a>
+      <a href="./" class="nav-logo" aria-label="Wall Envy Home">
+        <img src="assets/images/logo-wallenvy.jpg" alt="Wall Envy" class="nav-logo-img">
+      </a>
       <ul class="nav-links">
         <li><a href="./" class="nav-link" data-path="/">Home</a></li>
         <li>
@@ -158,7 +160,7 @@ def page(title, desc, content, path=""):
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
   <base href="{BASE_HREF}">
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/logo-wallenvy.jpg" type="image/jpeg">
   <link rel="stylesheet" href="assets/css/style.css">
   {THEME_SCRIPT}
 </head>
@@ -979,7 +981,7 @@ PAGES["contact.html"] = page(
 
         <!-- Facebook Page Widget (shown only if consent accepted) -->
         <div class="fb-widget-wrap" id="fb-widget-section" style="margin-top:2rem;">
-          <h4>&#128077; Follow Us on Facebook</h4>
+          <h4><a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">&#128077; Follow Us on Facebook &#8594;</a></h4>
           <div id="fb-root"></div>
           <div class="fb-page"
             data-href="https://www.facebook.com/people/Wallenvy/61592586241845/"
