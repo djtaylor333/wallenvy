@@ -245,20 +245,33 @@ p { color: var(--text2); }
 /* Logo */
 .nav-logo {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.85rem;
+  letter-spacing: 0.15em;
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   transition: opacity var(--t);
 }
 .nav-logo:hover { opacity: 0.85; }
 
-.nav-logo-img {
-  height: 44px;
-  width: 44px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  box-shadow: 0 0 12px rgba(0,212,255,0.2);
+/* Facebook follow card — matches .insta-card style */
+.fb-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(24,119,242,0.1), rgba(66,103,178,0.08));
+  border: 1px solid rgba(24,119,242,0.25);
+  border-radius: var(--card-r);
+  padding: 1.75rem;
+  margin-top: 1.5rem;
+  transition: all var(--t);
+  text-decoration: none;
+  color: inherit;
 }
+.fb-card:hover { border-color: rgba(24,119,242,0.5); transform: translateY(-2px); }
+.fb-card .fb-icon { font-size: 2.5rem; flex-shrink: 0; }
 
 /* Desktop Nav Links */
 .nav-links {

@@ -19,9 +19,7 @@ NAV = """
 <nav class="site-nav" id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="./" class="nav-logo" aria-label="Wall Envy Home">
-        <img src="assets/images/logo-wallenvy.jpg" alt="Wall Envy" class="nav-logo-img">
-      </a>
+      <a href="./" class="nav-logo">WALL ENVY</a>
       <ul class="nav-links">
         <li><a href="./" class="nav-link" data-path="/">Home</a></li>
         <li>
@@ -160,7 +158,7 @@ def page(title, desc, content, path=""):
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
   <base href="{BASE_HREF}">
-  <link rel="icon" href="assets/images/logo-wallenvy.jpg" type="image/jpeg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
   {THEME_SCRIPT}
 </head>
@@ -979,21 +977,16 @@ PAGES["contact.html"] = page(
           </a>
         </div>
 
-        <!-- Facebook Page Widget (shown only if consent accepted) -->
-        <div class="fb-widget-wrap" id="fb-widget-section" style="margin-top:2rem;">
-          <h4><a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">&#128077; Follow Us on Facebook &#8594;</a></h4>
-          <div id="fb-root"></div>
-          <div class="fb-page"
-            data-href="https://www.facebook.com/people/Wallenvy/61592586241845/"
-            data-tabs="timeline"
-            data-width="380"
-            data-height="400"
-            data-small-header="true"
-            data-adapt-container-width="true"
-            data-hide-cover="false"
-            data-show-facepile="false">
+        <!-- Facebook Follow Card -->
+        <a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" class="fb-card">
+          <div class="fb-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </div>
-        </div>
+          <div>
+            <h4>Follow Us on Facebook</h4>
+            <p>See our latest work, project updates, and behind-the-scenes content on our Facebook page.</p>
+          </div>
+        </a>
 
         <!-- Instagram Follow Card -->
         <a href="https://www.instagram.com/wallenvy.au" target="_blank" rel="noopener" class="insta-card" style="text-decoration:none;margin-top:1.5rem;display:flex;">
