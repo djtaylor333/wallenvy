@@ -9,39 +9,43 @@ import os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# /wallenvy/  -> GitHub Pages subdirectory (djtaylor333.github.io/wallenvy/)
+# /           -> Custom domain root (wallenvy.com.au) — change when going live
+BASE_HREF = '/wallenvy/'
+
 # ─── Shared HTML Fragments ──────────────────────────────────────────────────
 
 NAV = """
 <nav class="site-nav" id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">WALL ENVY</a>
+      <a href="./" class="nav-logo">WALL ENVY</a>
       <ul class="nav-links">
-        <li><a href="/" class="nav-link" data-path="/">Home</a></li>
+        <li><a href="./" class="nav-link" data-path="/">Home</a></li>
         <li>
-          <a href="/services.html" class="nav-link" data-path="/services">Services <span class="arrow">&#9660;</span></a>
+          <a href="services.html" class="nav-link" data-path="/services">Services <span class="arrow">&#9660;</span></a>
           <div class="dropdown">
-            <a href="/services/commercial.html">Commercial &amp; Office</a>
-            <a href="/services/residential.html">Residential &amp; Interior</a>
-            <a href="/services/healthcare.html">Healthcare &amp; Clinics</a>
-            <a href="/services/schools.html">Schools &amp; Education</a>
-            <a href="/services/hospitality.html">Hospitality, Cafes &amp; Retail</a>
-            <a href="/services/sports.html">Sports &amp; Sponsorship</a>
+            <a href="services/commercial.html">Commercial &amp; Office</a>
+            <a href="services/residential.html">Residential &amp; Interior</a>
+            <a href="services/healthcare.html">Healthcare &amp; Clinics</a>
+            <a href="services/schools.html">Schools &amp; Education</a>
+            <a href="services/hospitality.html">Hospitality, Cafes &amp; Retail</a>
+            <a href="services/sports.html">Sports &amp; Sponsorship</a>
           </div>
         </li>
         <li>
-          <a href="/printing.html" class="nav-link" data-path="/printing">Printing <span class="arrow">&#9660;</span></a>
+          <a href="printing.html" class="nav-link" data-path="/printing">Printing <span class="arrow">&#9660;</span></a>
           <div class="dropdown">
-            <a href="/printing.html">Print Surfaces</a>
-            <a href="/printing/embossed-relief.html">Embossed &amp; Relief</a>
-            <a href="/printing/vehicle-branding.html">Vehicle Branding</a>
+            <a href="printing.html">Print Surfaces</a>
+            <a href="printing/embossed-relief.html">Embossed &amp; Relief</a>
+            <a href="printing/vehicle-branding.html">Vehicle Branding</a>
           </div>
         </li>
-        <li><a href="/how-it-works.html" class="nav-link" data-path="/how-it-works">How It Works</a></li>
-        <li><a href="/why-choose-us.html" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
-        <li><a href="/projects.html" class="nav-link" data-path="/projects">Projects</a></li>
-        <li><a href="/faqs.html" class="nav-link" data-path="/faqs">FAQs</a></li>
-        <li><a href="/contact.html" class="nav-link" data-path="/contact" style="color:var(--cyan);font-weight:600;">Contact</a></li>
+        <li><a href="how-it-works.html" class="nav-link" data-path="/how-it-works">How It Works</a></li>
+        <li><a href="why-choose-us.html" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
+        <li><a href="projects.html" class="nav-link" data-path="/projects">Projects</a></li>
+        <li><a href="faqs.html" class="nav-link" data-path="/faqs">FAQs</a></li>
+        <li><a href="contact.html" class="nav-link" data-path="/contact" style="color:var(--cyan);font-weight:600;">Contact</a></li>
       </ul>
       <button class="theme-toggle" aria-label="Toggle theme">
         <span class="icon-sun">&#9728;&#65039;</span>
@@ -56,24 +60,24 @@ NAV = """
 <div class="mobile-menu" id="mobile-menu">
   <a href="/">Home</a>
   <div class="mobile-section-label">Services</div>
-  <a href="/services.html">All Services</a>
-  <a href="/services/commercial.html" style="padding-left:1.75rem">Commercial &amp; Office</a>
-  <a href="/services/residential.html" style="padding-left:1.75rem">Residential &amp; Interior</a>
-  <a href="/services/healthcare.html" style="padding-left:1.75rem">Healthcare &amp; Clinics</a>
-  <a href="/services/schools.html" style="padding-left:1.75rem">Schools &amp; Education</a>
-  <a href="/services/hospitality.html" style="padding-left:1.75rem">Hospitality, Cafes &amp; Retail</a>
-  <a href="/services/sports.html" style="padding-left:1.75rem">Sports &amp; Sponsorship</a>
+  <a href="services.html">All Services</a>
+  <a href="services/commercial.html" style="padding-left:1.75rem">Commercial &amp; Office</a>
+  <a href="services/residential.html" style="padding-left:1.75rem">Residential &amp; Interior</a>
+  <a href="services/healthcare.html" style="padding-left:1.75rem">Healthcare &amp; Clinics</a>
+  <a href="services/schools.html" style="padding-left:1.75rem">Schools &amp; Education</a>
+  <a href="services/hospitality.html" style="padding-left:1.75rem">Hospitality, Cafes &amp; Retail</a>
+  <a href="services/sports.html" style="padding-left:1.75rem">Sports &amp; Sponsorship</a>
   <hr>
   <div class="mobile-section-label">Printing</div>
-  <a href="/printing.html">Print Surfaces</a>
-  <a href="/printing/embossed-relief.html" style="padding-left:1.75rem">Embossed &amp; Relief</a>
-  <a href="/printing/vehicle-branding.html" style="padding-left:1.75rem">Vehicle Branding</a>
+  <a href="printing.html">Print Surfaces</a>
+  <a href="printing/embossed-relief.html" style="padding-left:1.75rem">Embossed &amp; Relief</a>
+  <a href="printing/vehicle-branding.html" style="padding-left:1.75rem">Vehicle Branding</a>
   <hr>
-  <a href="/how-it-works.html">How It Works</a>
-  <a href="/why-choose-us.html">Why Choose Us</a>
-  <a href="/projects.html">Projects</a>
-  <a href="/faqs.html">FAQs</a>
-  <a href="/contact.html" style="color:var(--cyan);font-weight:700;">Contact Us</a>
+  <a href="how-it-works.html">How It Works</a>
+  <a href="why-choose-us.html">Why Choose Us</a>
+  <a href="projects.html">Projects</a>
+  <a href="faqs.html">FAQs</a>
+  <a href="contact.html" style="color:var(--cyan);font-weight:700;">Contact Us</a>
 </div>
 """
 
@@ -82,7 +86,7 @@ FOOTER = """
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo">WALL ENVY</a>
+        <a href="./" class="footer-logo">WALL ENVY</a>
         <p>Any Design. Any Surface. Print the Impossible.<br>
            Serving the Central Coast &amp; Hunter regions of NSW, Australia.</p>
         <div class="footer-social">
@@ -97,23 +101,23 @@ FOOTER = """
       <div class="footer-col">
         <h5>Services</h5>
         <ul>
-          <li><a href="/services/commercial.html">Commercial &amp; Office</a></li>
-          <li><a href="/services/residential.html">Residential</a></li>
-          <li><a href="/services/healthcare.html">Healthcare</a></li>
-          <li><a href="/services/schools.html">Schools &amp; Education</a></li>
-          <li><a href="/services/hospitality.html">Hospitality &amp; Retail</a></li>
-          <li><a href="/services/sports.html">Sports &amp; Sponsorship</a></li>
+          <li><a href="services/commercial.html">Commercial &amp; Office</a></li>
+          <li><a href="services/residential.html">Residential</a></li>
+          <li><a href="services/healthcare.html">Healthcare</a></li>
+          <li><a href="services/schools.html">Schools &amp; Education</a></li>
+          <li><a href="services/hospitality.html">Hospitality &amp; Retail</a></li>
+          <li><a href="services/sports.html">Sports &amp; Sponsorship</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Printing</h5>
         <ul>
-          <li><a href="/printing.html">Print Surfaces</a></li>
-          <li><a href="/printing/embossed-relief.html">Embossed &amp; Relief</a></li>
-          <li><a href="/printing/vehicle-branding.html">Vehicle Branding</a></li>
-          <li><a href="/how-it-works.html">How It Works</a></li>
-          <li><a href="/why-choose-us.html">Why Choose Us</a></li>
-          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="printing.html">Print Surfaces</a></li>
+          <li><a href="printing/embossed-relief.html">Embossed &amp; Relief</a></li>
+          <li><a href="printing/vehicle-branding.html">Vehicle Branding</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="why-choose-us.html">Why Choose Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
       <div class="footer-col footer-contact">
@@ -121,12 +125,12 @@ FOOTER = """
         <p>&#128222; <a href="tel:0414698448" style="color:inherit;">0414 698 448</a></p>
         <p>&#9993;&#65039; <a href="mailto:info@wallenvy.com.au" style="color:inherit;">info@wallenvy.com.au</a></p>
         <p>&#128205; Central Coast &amp; Hunter, NSW</p>
-        <a href="/contact.html" class="btn btn-primary btn-sm" style="margin-top:1rem;display:inline-flex;">Get Free Quote</a>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:1rem;display:inline-flex;">Get Free Quote</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Wall Envy Aus. All Rights Reserved.</span>
-      <span><a href="/faqs.html" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="/contact.html" style="color:inherit;">Contact</a></span>
+      <span><a href="faqs.html" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="contact.html" style="color:inherit;">Contact</a></span>
     </div>
   </div>
 </footer>
@@ -153,15 +157,16 @@ def page(title, desc, content, path=""):
   <meta property="og:title" content="{title} | Wall Envy">
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
-  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <base href="{BASE_HREF}">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
   {THEME_SCRIPT}
 </head>
 <body>
 {NAV}
 {content}
 {FOOTER}
-<script src="/assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>"""
 
@@ -178,7 +183,7 @@ def cta_strip(kicker="Ready to Get Started?", headline="Print the Impossible", s
     {sub_html}
     <div class="cta-btns">
       <a href="{cta_link}" class="btn btn-primary btn-lg">{cta_label}</a>
-      <a href="/projects.html" class="btn btn-outline btn-lg">See Our Work</a>
+      <a href="projects.html" class="btn btn-outline btn-lg">See Our Work</a>
     </div>
   </div>
 </section>"""
@@ -207,37 +212,37 @@ PAGES["services.html"] = page(
   <div class="container">
     <p class="reveal" style="max-width:720px;margin-bottom:3rem;">We provide printing services on a variety of surfaces to a variety of businesses. We aren't limited to commercial — we can do residential, small businesses, hospitals, restaurants, schools, stadiums — anywhere you can think of. Or if you need a custom design, we can work with you on something that perfectly suits your space.</p>
     <div class="services-grid">
-      <a href="/services/commercial.html" class="service-card reveal">
+      <a href="services/commercial.html" class="service-card reveal">
         <div class="service-icon">&#127970;</div>
         <h3>Commercial &amp; Office Spaces</h3>
         <p>German-engineered UV printing that transforms reception walls, boardrooms, and retail spaces with powerful, permanent brand imagery.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/services/residential.html" class="service-card reveal reveal-delay-1">
+      <a href="services/residential.html" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#127968;</div>
         <h3>Residential &amp; Interior Design</h3>
         <p>Bespoke architectural finishes for your home. Backed by carpentry expertise and interior design know-how for a flawless result.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/services/healthcare.html" class="service-card reveal reveal-delay-2">
+      <a href="services/healthcare.html" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#127973;</div>
         <h3>Healthcare &amp; Clinics</h3>
         <p>Seamless, hygienic, low-VOC wall art that calms patients and elevates your practice without compromising clinical standards.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/services/schools.html" class="service-card reveal">
+      <a href="services/schools.html" class="service-card reveal">
         <div class="service-icon">&#127891;</div>
         <h3>Schools &amp; Education</h3>
         <p>Pick-proof, 100% child-safe murals that inspire learning — durable enough for classrooms and safe enough for nurseries.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/services/hospitality.html" class="service-card reveal reveal-delay-1">
+      <a href="services/hospitality.html" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#9749;</div>
         <h3>Hospitality, Cafes &amp; Retail</h3>
         <p>Create Instagram-worthy walls that drive organic word-of-mouth. Zero downtime — trade again the very next day.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/services/sports.html" class="service-card reveal reveal-delay-2">
+      <a href="services/sports.html" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#127942;</div>
         <h3>Sports &amp; Sponsorship</h3>
         <p>The Direct-to-Wall Sponsorship Model — premium, permanent sponsor placements that generate ongoing revenue for your club.</p>
@@ -575,19 +580,19 @@ PAGES["printing.html"] = page(
       </div>
     </div>
     <div class="services-grid">
-      <a href="/services/commercial.html" class="service-card reveal">
+      <a href="services/commercial.html" class="service-card reveal">
         <div class="service-icon">&#127970;</div>
         <h3>Commercial &amp; Office Spaces</h3>
         <p>Walls, glass partitions, reception counters, and more.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/printing/embossed-relief.html" class="service-card reveal reveal-delay-1">
+      <a href="printing/embossed-relief.html" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#9632;&#65039;</div>
         <h3>Embossed &amp; Relief Printing</h3>
         <p>True 3D tactile textures built up with layers of UV-curable ink. You can actually feel the design.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="/printing/vehicle-branding.html" class="service-card reveal reveal-delay-2">
+      <a href="printing/vehicle-branding.html" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#128663;</div>
         <h3>Vehicle Branding</h3>
         <p>Permanent, seamless branding directly onto vans, trucks, trailers — no vinyl, no peeling.</p>
@@ -920,7 +925,7 @@ PAGES["faqs.html"] = page(
       <div class="highlight-box reveal" style="margin-top:3rem;text-align:center;">
         <h4 style="margin-bottom:0.5rem;">Still have questions?</h4>
         <p style="margin-bottom:1.25rem;">We're happy to help. Reach out directly and we'll get back to you quickly.</p>
-        <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
       </div>
     </div>
   </div>
@@ -1037,7 +1042,7 @@ PAGES["404.html"] = page(
     <p style="max-width:420px;margin:0 auto 2rem;">The page you're looking for doesn't exist, but we can definitely print something here. Let's get you back on track.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="/" class="btn btn-primary">Back to Home</a>
-      <a href="/contact.html" class="btn btn-outline">Contact Us</a>
+      <a href="contact.html" class="btn btn-outline">Contact Us</a>
     </div>
   </div>
 </section>"""

@@ -146,8 +146,11 @@
     const themeBtn   = document.querySelector('.theme-toggle');
     const nav        = document.getElementById('site-nav');
 
-    // Mark active link
-    const path = window.location.pathname.replace(/\/$/, '') || '/';
+    // Mark active link — strip base href prefix so works at /wallenvy/ or /
+    const baseEl  = document.querySelector('base');
+    const baseHref = baseEl ? baseEl.getAttribute('href') : '/';
+    const basePath = new URL(baseHref, window.location.origin).pathname.replace(/\/$/, '');
+    const path = window.location.pathname.replace(basePath, '').replace(/\/$/, '') || '/';
     document.querySelectorAll('.nav-link[data-path], .mobile-menu a[data-path]').forEach(link => {
       const lp = link.getAttribute('data-path').replace(/\/$/, '');
       if (path === lp || (lp !== '/' && path.startsWith(lp))) {
