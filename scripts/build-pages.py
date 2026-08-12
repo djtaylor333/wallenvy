@@ -19,7 +19,9 @@ NAV = """
 <nav class="site-nav" id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="./" class="nav-logo">WALL ENVY</a>
+      <a href="./" class="nav-logo" aria-label="Wall Envy Home">
+        <img src="assets/images/logo-banner.png" alt="Wall Envy" class="nav-logo-img">
+      </a>
       <ul class="nav-links">
         <li><a href="./" class="nav-link" data-path="/">Home</a></li>
         <li>
@@ -41,6 +43,7 @@ NAV = """
             <a href="printing/vehicle-branding.html">Vehicle Branding</a>
           </div>
         </li>
+        <li><a href="about.html" class="nav-link" data-path="/about">About Us</a></li>
         <li><a href="how-it-works.html" class="nav-link" data-path="/how-it-works">How It Works</a></li>
         <li><a href="why-choose-us.html" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
         <li><a href="projects.html" class="nav-link" data-path="/projects">Projects</a></li>
@@ -75,6 +78,7 @@ NAV = """
   <hr>
   <a href="how-it-works.html">How It Works</a>
   <a href="why-choose-us.html">Why Choose Us</a>
+  <a href="about.html">About Us</a>
   <a href="projects.html">Projects</a>
   <a href="faqs.html">FAQs</a>
   <a href="contact.html" style="color:var(--cyan);font-weight:700;">Contact Us</a>
@@ -117,6 +121,7 @@ FOOTER = """
           <li><a href="printing/vehicle-branding.html">Vehicle Branding</a></li>
           <li><a href="how-it-works.html">How It Works</a></li>
           <li><a href="why-choose-us.html">Why Choose Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
       </div>
@@ -130,7 +135,7 @@ FOOTER = """
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Wall Envy Aus. All Rights Reserved.</span>
-      <span><a href="faqs.html" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="contact.html" style="color:inherit;">Contact</a></span>
+      <span><a href="faqs.html" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="about.html" style="color:inherit;">About Us</a> &nbsp;&middot;&nbsp; <a href="contact.html" style="color:inherit;">Contact</a></span>
     </div>
   </div>
 </footer>
@@ -1022,6 +1027,115 @@ PAGES["contact.html"] = page(
     </div>
   </div>
 </section>"""
+)
+
+# ── 404.html ──────────────────────────────────────────────────────────────
+
+# ── about.html ───────────────────────────────────────────────────────────────
+
+PAGES["about.html"] = page(
+    "About Us",
+    "Wall Envy is a family-owned direct-to-wall printing business based on the Central Coast of NSW. Meet the team behind the technology.",
+    inner_hero("Our Story", 'About <span class="gradient-text">Wall Envy</span>', "A family-owned business where carpentry craftsmanship meets interior design expertise.") + """
+<section class="section page-content" style="padding-top:3rem;">
+  <div class="container">
+
+    <!-- Hero intro -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem;">
+      <div class="reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 style="margin-bottom:1.25rem;">Craftsmanship Meets <span class="gradient-text">Creative Vision</span></h2>
+        <p style="font-size:1.05rem;margin-bottom:1rem;">Wall Envy is a family-owned direct-to-wall printing business serving the Central Coast and Hunter regions of NSW, Australia. We combine two powerful professional backgrounds — Nicole&rsquo;s eye for interior design and our team&rsquo;s decades of professional carpentry and surface expertise — to deliver wall transformations that are truly one of a kind.</p>
+        <p>We&rsquo;re not just a printing company. We&rsquo;re craftspeople who understand surfaces, spaces, and the power of a well-executed design. Every project we take on is backed by a genuine commitment to quality, from the initial consultation right through to the final reveal.</p>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <img src="assets/images/projects/proj-05.jpg" alt="Wall Envy project" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
+      </div>
+    </div>
+
+    <!-- The team -->
+    <div style="margin-bottom:4rem;">
+      <h3 class="reveal" style="margin-bottom:2rem;">The People Behind the <span class="gradient-text">Print</span></h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+        <div class="card card-glow reveal">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">&#127775;</div>
+          <h4 style="margin-bottom:0.5rem;">Interior Design &amp; Client Consulting</h4>
+          <p>Nicole brings a background in interior styling and design, working directly with clients to understand their vision, curate the perfect artwork, select colour palettes, and ensure every design fits seamlessly within the existing space. She doesn&rsquo;t just take a brief &mdash; she helps shape it into something exceptional.</p>
+        </div>
+        <div class="card card-glow reveal reveal-delay-1">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">&#128296;</div>
+          <h4 style="margin-bottom:0.5rem;">Surface Preparation &amp; Precision Printing</h4>
+          <p>Backed by years of professional experience at J. Yates Carpentry, our team ensures every surface is perfectly prepared, patched, and primed before a single drop of ink is applied. A premium print requires a flawless foundation &mdash; and our carpentry expertise means we deliver exactly that, every time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology -->
+    <div style="margin-bottom:4rem;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+        <div class="reveal reveal-delay-1">
+          <img src="assets/images/projects/proj-17.jpg" alt="Wall Envy printing technology" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
+        </div>
+        <div class="reveal">
+          <span class="section-label">Our Technology</span>
+          <h3 style="margin-bottom:1.25rem;">German-Engineered <span class="gradient-text">UV Precision</span></h3>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon">&#127759;</div>
+              <div><h4>Direct-to-Surface Printing</h4><p>Our advanced vertical printer attaches directly to your wall and prints with laser-accurate alignment &mdash; accommodating heights of up to 4 metres.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#9889;</div>
+              <div><h4>Instant UV Cure</h4><p>Ink is cured with UV light the moment it leaves the print head. Dry instantly, no odour, no off-gassing &mdash; safe for homes, schools, and clinics immediately after we leave.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#127807;</div>
+              <div><h4>Eco-Friendly Inks</h4><p>German-engineered, low-VOC, non-toxic inks that bond permanently to the surface. No peeling, no seams, no harmful chemicals &mdash; ever.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">&#127959;</div>
+              <div><h4>Any Surface</h4><p>Plasterboard, brick, glass, concrete, timber, metal, tiles &mdash; if it&rsquo;s vertical, there&rsquo;s an excellent chance we can print on it.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div style="margin-bottom:4rem;">
+      <h3 class="reveal text-center" style="margin-bottom:2rem;">What We Stand <span class="gradient-text">For</span></h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;">
+        <div class="card reveal text-center">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#129309;</div>
+          <h4 style="margin-bottom:0.5rem;">Family Values</h4>
+          <p style="font-size:0.9rem;">We treat every client project with the same care and pride we would give our own home. Your space matters to us.</p>
+        </div>
+        <div class="card reveal reveal-delay-1 text-center">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128269;</div>
+          <h4 style="margin-bottom:0.5rem;">Attention to Detail</h4>
+          <p style="font-size:0.9rem;">From surface preparation to final reveal, we don&rsquo;t cut corners. Every millimetre is calibrated, every edge is perfect.</p>
+        </div>
+        <div class="card reveal reveal-delay-2 text-center">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#128444;&#65039;</div>
+          <h4 style="margin-bottom:0.5rem;">Digital Proofing</h4>
+          <p style="font-size:0.9rem;">You&rsquo;ll always see a digital mockup of your design in your actual space before we print a single drop of ink.</p>
+        </div>
+        <div class="card reveal reveal-delay-3 text-center">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">&#127759;</div>
+          <h4 style="margin-bottom:0.5rem;">Local Business</h4>
+          <p style="font-size:0.9rem;">We&rsquo;re proud to serve the Central Coast and Hunter communities. Local expertise, local pride.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service area -->
+    <div class="highlight-box reveal text-center" style="margin-bottom:2rem;">
+      <h4 style="margin-bottom:0.5rem;">&#128205; Our Service Area</h4>
+      <p style="margin:0;">We proudly serve the <strong>Central Coast</strong> and <strong>Hunter regions</strong> of NSW, Australia &mdash; including residential, commercial, and institutional clients across the area. Have a project further afield? <a href="contact.html" style="color:var(--cyan);">Get in touch</a> and we&rsquo;ll see what we can arrange.</p>
+    </div>
+
+  </div>
+</section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let's talk about what we can create together.", "Book Free Consultation")
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────

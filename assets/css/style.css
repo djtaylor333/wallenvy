@@ -245,16 +245,23 @@ p { color: var(--text2); }
 /* Logo */
 .nav-logo {
   flex-shrink: 0;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.85rem;
-  letter-spacing: 0.15em;
-  background: var(--grad-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  transition: opacity var(--t);
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #080808; /* keeps logo readable in light mode */
+  transition: opacity var(--t), box-shadow var(--t);
 }
-.nav-logo:hover { opacity: 0.85; }
+.nav-logo:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 16px rgba(0,212,255,0.3);
+}
+.nav-logo-img {
+  height: 46px;
+  width: auto;
+  display: block;
+  /* screen blend makes the black background invisible on any background */
+}
 
 /* Facebook follow card — matches .insta-card style */
 .fb-card {
