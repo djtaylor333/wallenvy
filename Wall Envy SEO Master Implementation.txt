@@ -1,0 +1,718 @@
+Wall Envy SEO Master Implementation Plan
+
+Implementation handoff for David — wallenvy.com.au
+
+Purpose
+
+This document consolidates the three Wall Envy SEO plans into one practical implementation roadmap. It is designed to be the single source of truth for technical SEO, on-page SEO, local SEO, image SEO, content expansion, internal linking, authority building and ongoing measurement.
+
+Primary business objective: generate qualified enquiries for direct-to-wall printing across the Central Coast, Newcastle, Lake Macquarie and the Hunter Region.
+
+Primary SEO theme: Direct to Wall Printing Central Coast & Newcastle.
+
+Core principle: Google should be able to understand three things immediately — what Wall Envy does, where Wall Envy operates, and which customer types Wall Envy serves.
+
+
+Platform note — important
+
+The current Wall Envy site is being managed in Squarespace. Where the source documents included hand-written robots.txt, sitemap.xml or HTML file examples, treat those as implementation concepts rather than instructions to create duplicate files manually inside Squarespace.
+
+For the current Squarespace site:
+• Use Squarespace’s automatically generated sitemap and submit /sitemap.xml in Google Search Console.
+• Do not create a second manual sitemap unless the platform changes.
+• Do not attempt to replace Squarespace’s robots.txt unless there is a specific indexing issue and Squarespace supports the required control.
+• Apply title tags, meta descriptions, headings, image alt text, redirects and page content through Squarespace page settings and content blocks.
+• Add custom schema only where it improves or supplements Squarespace’s existing structured data and has been validated.
+
+If Wall Envy later moves to a fully custom-coded website, the HTML/schema examples from the technical handoff can then be adapted to that environment.
+
+
+1. Implementation order and priorities
+
+P0 — Do first
+1. Verify Google Search Console ownership.
+2. Submit the live Squarespace sitemap.
+3. Confirm Google Business Profile points to the live domain.
+4. Fix “Sports & Sponshorships” to “Sports & Sponsorships” everywhere.
+5. Audit current URLs and prepare 301 redirects before changing any indexed URL.
+6. Set unique SEO titles and meta descriptions for the homepage and all key service pages.
+7. Ensure one clear H1 on every important page.
+8. Compress and optimise major site images.
+9. Add accurate alt text to meaningful images.
+10. Request reindexing of substantially changed pages.
+
+P1 — Core optimisation
+11. Rewrite/expand the Services page.
+12. Strengthen the first 150–250 words of every major service page.
+13. Give every service page a unique keyword target.
+14. Build deliberate internal links between services, process, surfaces, projects, FAQs and contact.
+15. Improve Projects from a gallery into case-study content.
+16. Add/validate LocalBusiness and relevant Service structured data where appropriate.
+
+P2 — Growth
+17. Build dedicated Central Coast and Newcastle/Hunter location pages.
+18. Expand FAQs around real purchase questions.
+19. Publish comparison/educational content.
+20. Build local backlinks and review volume.
+21. Review Search Console queries monthly and optimise pages already ranking within striking distance.
+
+
+2. Measurement setup
+
+2.1 Google Search Console
+
+Owner: David / business owner access required.
+
+Actions:
+1. Verify wallenvy.com.au in Google Search Console.
+2. Confirm the preferred canonical domain resolves consistently.
+3. Submit https://www.wallenvy.com.au/sitemap.xml or the exact canonical sitemap URL Squarespace exposes.
+4. Check Pages/Indexing for crawl or canonical issues.
+5. Inspect the homepage and major service URLs.
+6. After major edits, use URL Inspection → Request Indexing.
+7. Do not request reindexing for every minor copy edit.
+
+Completion check:
+• Domain verified.
+• Sitemap accepted.
+• Homepage and key service pages shown as crawlable/indexable.
+• No accidental noindex or blocked important pages.
+
+
+2.2 Google Business Profile
+
+Owner: business owner, with David assisting technical consistency.
+
+Actions:
+• Business name must remain the genuine name: Wall Envy.
+• Website URL must point to the live canonical domain.
+• Use the closest legitimate primary category available.
+• Add genuine service areas: Central Coast, Newcastle, Lake Macquarie and Hunter Region where actually serviced.
+• Keep phone, website and business information consistent with the website.
+• Add completed project photos regularly.
+• Ask genuine customers for reviews after successful jobs.
+• Never add SEO keywords to the business name unless they are genuinely part of the registered/trading name.
+
+Completion check:
+• Website, phone and service areas accurate.
+• At least a strong initial set of real project images.
+• Review request process in place.
+
+
+3. URL architecture and redirects
+
+Current indexed URLs have been unnecessarily nested under structures such as /home/services/. The long-term target should be short, descriptive and stable URLs.
+
+Recommended target structure:
+Homepage: /
+Services overview: /services
+Commercial: /commercial-wall-printing
+Hospitality: /hospitality-wall-printing
+Healthcare: /healthcare-wall-printing
+Schools/Education: /school-wall-printing
+Sports & Sponsorships: /sports-wall-printing or /sports-sponsorship-wall-printing
+Residential: /residential-wall-printing
+Print Surfaces: /wall-printing-surfaces
+Embossed & Relief: /embossed-relief-wall-printing
+How It Works: /how-it-works
+Why Choose Us: /why-choose-us
+Projects: /projects
+FAQs: /faqs
+About: /about
+Contact: /contact
+
+Critical rule: do not change any URL that Google has already indexed without a permanent 301 redirect from the old URL to the new URL.
+
+David’s migration process:
+1. Export/list every current live URL.
+2. Mark KEEP or CHANGE.
+3. For every CHANGE URL, define one destination URL.
+4. Implement 301 redirects in Squarespace URL Mappings.
+5. Update all internal links to point directly to the final URL.
+6. Update navigation.
+7. Test old URLs return a single 301 to the correct live page.
+8. Re-submit important new URLs through Search Console.
+9. Watch Search Console for 404s and redirect errors.
+
+Immediate correction:
+Change “Sports & Sponshorships” to “Sports & Sponsorships” in navigation, page title, on-page heading, SEO title and slug. Redirect the misspelled legacy URL to the corrected one.
+
+
+4. Page keyword map and on-page requirements
+
+Do not target the same primary keyword on every page. Each page needs one principal search intent, with related secondary phrases used naturally.
+
+Homepage
+Primary: direct to wall printing Central Coast / direct to wall printing Newcastle
+Secondary: wall printing Hunter Region, custom wall printing, wall murals
+
+Commercial & Office
+Primary: commercial wall printing
+Secondary: office wall murals, office branding walls, company logo wall printing
+
+Hospitality
+Primary: cafe wall murals / restaurant wall printing
+Secondary: retail wall printing, hospitality feature walls, Instagrammable cafe walls
+
+Healthcare
+Primary: healthcare wall murals / clinic wall printing
+Secondary: medical centre wall graphics, healthcare feature walls
+
+Schools
+Primary: school wall murals / educational wall printing
+Secondary: classroom murals, school feature walls
+
+Sports & Sponsorships
+Primary: sports club wall printing / gym wall printing
+Secondary: sponsorship walls, sports facility murals, sponsor branding walls
+
+Residential
+Primary: residential wall printing / custom wall murals
+Secondary: feature walls, nursery murals, home wall art
+
+Print Surfaces
+Primary: direct printing on walls and surfaces
+Secondary: printing on brick, glass, concrete, metal, wood
+
+Embossed & Relief
+Primary: embossed wall printing / textured wall printing
+Secondary: relief wall printing, dimensional wall print effects
+
+Location pages
+Central Coast: direct to wall printing Central Coast
+Newcastle/Hunter: direct to wall printing Newcastle / Hunter Region
+
+
+5. Homepage specification
+
+Primary target: Direct to Wall Printing Central Coast & Newcastle
+
+Recommended SEO title:
+Direct to Wall Printing Central Coast & Newcastle | Wall Envy
+
+Alternative if character length needs tightening:
+Direct-to-Wall Printing Central Coast & Newcastle | Wall Envy
+
+Recommended H1:
+Direct to Wall Printing That Transforms Your Space
+
+Recommended opening copy:
+Wall Envy provides premium direct-to-wall printing across the Central Coast, Newcastle, Lake Macquarie and the Hunter Region. We create high-resolution custom murals, branded walls and feature artwork directly onto suitable surfaces for commercial and residential spaces.
+
+Recommended meta description:
+Transform walls into powerful branded spaces with premium direct-to-wall printing across the Central Coast, Newcastle & Hunter. Commercial and residential. Get a quote.
+
+Homepage internal links should lead naturally to:
+• Commercial & Office
+• Hospitality
+• Schools
+• Healthcare
+• Sports & Sponsorships
+• Residential
+• Print Surfaces
+• Projects
+• How It Works
+• Contact / quote CTA
+
+Completion check:
+• One H1 only.
+• Primary service and geography appear naturally near the top.
+• Unique title and meta description.
+• Clear service links.
+• Strong quote CTA.
+
+
+6. Service page template
+
+Every major service page should use the same SEO framework while keeping the actual content unique.
+
+Required structure:
+H1 — service + customer intent + location where natural
+Opening 150–250 words — what the service is, who it is for, geographic coverage, key outcome
+H2 — key use cases
+H2 — branding/design possibilities
+H2 — suitable surfaces
+H2 — why direct-to-wall printing vs alternatives
+H2 — process / what to expect
+H2 — relevant project examples
+H2 — FAQs
+CTA — request quote / consultation
+
+Commercial example
+H1: Commercial Wall Printing Central Coast & Newcastle
+H2: Office Wall Branding
+H2: Direct Printed Company Logos
+H2: Reception & Boardroom Feature Walls
+H2: Why Direct-to-Wall Printing Instead of Vinyl
+H2: Surfaces We Can Print On
+H2: Commercial Wall Printing FAQ
+
+Recommended opening:
+Wall Envy provides direct-to-wall printing for offices and commercial spaces across the Central Coast, Newcastle, Lake Macquarie and the Hunter Region. We print company logos, branded graphics, corporate values, large-scale artwork and custom murals directly onto suitable existing wall surfaces.
+
+Rule: do not copy this opening and simply change the industry name for every service page. Each page needs genuine industry-specific content.
+
+
+7. Recommended metadata by page
+
+Use these as implementation starting points, then check length in the live SERP preview.
+
+Homepage
+Title: Direct to Wall Printing Central Coast & Newcastle | Wall Envy
+Description: Transform walls into powerful branded spaces with premium direct-to-wall printing across the Central Coast, Newcastle & Hunter. Commercial and residential. Get a quote.
+
+Commercial
+Title: Commercial Wall Printing Central Coast & Newcastle | Wall Envy
+Description: Direct-to-wall printing for offices and commercial spaces across the Central Coast, Newcastle & Hunter. Logos, branded walls, feature murals and more.
+
+Residential
+Title: Residential Wall Murals & Feature Walls | Wall Envy
+Description: Bespoke direct-to-wall printed murals and feature walls for homes across the Central Coast, Newcastle and Hunter Region. Custom designs and high-resolution results.
+
+Healthcare
+Title: Healthcare & Clinic Wall Murals | Wall Envy
+Description: Seamless direct-to-wall artwork for clinics and healthcare spaces across the Central Coast, Newcastle and Hunter. Create calm, branded patient environments.
+
+Schools
+Title: School Wall Murals & Educational Wall Printing | Wall Envy
+Description: Vibrant direct-to-wall murals for schools and learning spaces across the Central Coast, Newcastle and Hunter. Educational, branded and custom artwork.
+
+Hospitality
+Title: Cafe, Restaurant & Retail Wall Printing | Wall Envy
+Description: Create standout feature walls for cafes, restaurants and retail spaces across the Central Coast, Newcastle and Hunter with direct-to-wall printing.
+
+Sports
+Title: Sports, Gym & Sponsorship Wall Printing | Wall Envy
+Description: Turn sports and gym walls into branded, motivational or sponsorship spaces with direct-to-wall printing across the Central Coast and Hunter.
+
+Print Surfaces
+Title: Wall Printing Surfaces — Brick, Glass, Wood & More | Wall Envy
+Description: Explore surfaces Wall Envy can print on, including suitable brick, glass, concrete, metal, wood and painted walls using direct-to-surface printing.
+
+About, Projects, FAQs and Contact
+Each must have a unique title and description that describes the page purpose. Do not reuse the homepage description.
+
+
+8. Services overview page
+
+The main Services page should become a useful overview, not a thin directory.
+
+Target content:
+Approximately 600–1,000 useful words where appropriate.
+
+Recommended sections:
+• Commercial & Offices
+• Hospitality, Cafes & Retail
+• Healthcare & Clinics
+• Schools & Education
+• Sports & Sponsorships
+• Residential
+• Printable Surfaces
+• Embossed / Relief options if offered
+
+Each section should:
+1. Explain the use case in 80–150 useful words.
+2. Include one relevant image.
+3. Link to the detailed service page with descriptive anchor text.
+4. Include a customer-focused benefit.
+5. Avoid repeating the exact same sentences from the destination page.
+
+
+9. Image SEO and performance
+
+This is a high-priority area because Wall Envy is image-heavy.
+
+Before upload:
+• Resize images to the display dimensions reasonably required.
+• Compress without visible quality loss.
+• Prefer modern efficient formats when Squarespace supports them automatically.
+• Do not upload huge original camera files when a much smaller web version is sufficient.
+
+Filename standard:
+service-subject-location.jpg
+
+Examples:
+cafe-direct-wall-printing-central-coast.jpg
+commercial-office-wall-mural-newcastle.jpg
+school-wall-printing-central-coast.jpg
+
+Alt text standard:
+Describe what is actually visible first. Add service/location only when it is genuinely useful context.
+
+Good:
+Direct-to-wall printed coffee mural behind tables in a Central Coast cafe
+
+Good:
+Company logo printed directly onto a reception wall in a Newcastle office
+
+Bad:
+Wall Envy best wall printing Central Coast Newcastle Hunter mural printer
+
+Do not add alt text to purely decorative images if the platform allows them to be ignored appropriately.
+
+Image audit checklist:
+1. Hero images compressed.
+2. Project images compressed.
+3. Descriptive filenames used for new uploads.
+4. Meaningful images have unique, accurate alt text.
+5. No keyword stuffing.
+6. Mobile pages checked for slow-loading oversized images.
+
+
+10. Internal linking architecture
+
+Build links deliberately so users and Google can move between related topics.
+
+Homepage → all core service pages.
+Services → each detailed service.
+Service pages → How It Works, Print Surfaces, Projects, FAQs and Contact.
+Print Surfaces → service pages where relevant.
+Projects → corresponding service and location pages.
+FAQs → relevant service/process pages.
+Location pages → key services and local projects.
+Educational articles → service pages, project examples and quote CTA.
+
+Examples of useful anchor text:
+commercial wall printing
+how direct-to-wall printing works
+surfaces we can print on
+recent wall printing projects
+request a wall printing quote
+
+Avoid anchors such as “click here” when a descriptive phrase can be used naturally.
+
+Completion check:
+No important page should be isolated. Every core page should receive internal links from at least one logically related page.
+
+
+11. Projects and case-study SEO
+
+Projects should become a major source of local SEO authority rather than remaining only a photo gallery.
+
+Create individual project pages where enough real information exists.
+
+Example titles:
+Cafe Wall Mural — Long Jetty NSW
+Office Branding Wall — Tuggerah NSW
+Gym Wall Printing — Newcastle NSW
+
+Recommended project page fields:
+• Project name
+• Suburb/location
+• Customer type
+• Project brief
+• Wall/surface type
+• Approximate print size where known
+• Design objective
+• Any installation constraints
+• Finished result
+• Before/after or process images
+• Link to the relevant service
+• Link to location page if applicable
+• Quote CTA
+
+Never invent project details merely to create SEO copy.
+
+
+12. Local landing pages
+
+Build these after the core site pages are optimised.
+
+Recommended first pages:
+ /wall-printing-central-coast
+ /wall-printing-newcastle-hunter
+
+Each must be genuinely unique.
+
+Include:
+• Clear local H1.
+• Local service introduction.
+• Areas actually serviced.
+• Types of local businesses/venues served.
+• Real project examples from that region when available.
+• Relevant images.
+• Testimonials from that area when available.
+• Locally relevant FAQs.
+• Links to service pages.
+• Strong enquiry CTA.
+
+Do not duplicate one location page and replace “Central Coast” with “Newcastle”. Thin duplicate location pages can weaken quality rather than improve SEO.
+
+
+13. FAQ content plan
+
+Prioritise genuine questions prospects ask before buying.
+
+Core questions:
+• How much does direct-to-wall printing cost?
+• What surfaces can you print on?
+• Can you print over painted walls?
+• How long does wall printing take?
+• Can you print photographs?
+• Can you print on brick?
+• Is wall printing suitable for cafes?
+• How durable is UV wall printing?
+• Can wall printing be removed?
+• How close can the printer print to ceilings, floors and corners?
+• What wall preparation is required?
+• Is direct-to-wall printing better than vinyl or wallpaper for my application?
+
+Answers should be useful, accurate and consistent with the actual machine/process. Do not write a definitive technical claim if the business cannot substantiate it.
+
+
+14. Content growth roadmap
+
+Publish content that captures potential customers before they know “direct-to-wall printing” is the solution.
+
+Priority topics:
+1. Direct-to-Wall Printing vs Vinyl Wall Graphics
+2. Wall Printing vs Wallpaper
+3. How Much Does a Custom Wall Mural Cost in Australia?
+4. Can You Print Directly Onto Brick?
+5. Best Wall Branding Ideas for Cafes
+6. Office Feature Wall Ideas for Australian Businesses
+7. School Mural Ideas That Combine Branding and Learning
+8. Gym and Sports Club Sponsorship Wall Ideas
+9. What Surfaces Can a Wall Printer Print On?
+10. How to Prepare a Wall for Direct-to-Wall Printing
+
+Every article should have:
+• One clear search intent.
+• Useful original explanation.
+• Original project imagery where possible.
+• Relevant internal links.
+• Clear next step / enquiry CTA.
+
+
+15. Structured data / schema
+
+Goal: help search engines interpret Wall Envy as a legitimate local service business and understand individual services.
+
+Recommended types to consider:
+• Organization and/or LocalBusiness
+• Service on individual service pages where appropriate
+
+Important:
+• Validate any custom JSON-LD with Google’s Rich Results Test and Schema.org validator where relevant.
+• Do not duplicate or contradict structured data already emitted by Squarespace.
+• Use real business details only.
+• Do not invent a street address if Wall Envy operates as a service-area business without a customer-facing location.
+• Keep telephone, email, social links and areaServed current.
+
+Source technical handoff included a LocalBusiness example using:
+telephone: +61 414 698 448
+email: info@wallenvy.com.au
+areaServed: Central Coast NSW, Newcastle NSW, Hunter Region NSW
+Facebook and Instagram URLs.
+
+David must verify these values are still correct before publishing them in schema.
+
+
+16. Technical SEO QA
+
+For every release or major SEO change, check:
+
+Indexability
+• Important page returns HTTP 200.
+• No accidental noindex.
+• Canonical points to the intended URL.
+• Sitemap contains the intended canonical URL.
+• Old changed URLs 301 to the correct destination.
+• No redirect chains.
+
+Page structure
+• Exactly one primary H1.
+• H2/H3 hierarchy is logical.
+• Title is unique.
+• Meta description is unique.
+• Main content is visible as text, not only embedded in images.
+• Navigation links are crawlable.
+
+Mobile/performance
+• Hero image is not unnecessarily large.
+• No major layout shift from images.
+• Page remains usable on mobile.
+• Images use sensible dimensions/compression.
+
+Content quality
+• Service and location are clear.
+• Copy is not duplicated from another service/location page.
+• Claims are accurate.
+• CTA works.
+• Internal links point to final URLs.
+
+After publishing
+• Inspect changed page in Search Console.
+• Request indexing if the change is substantial.
+• Record change date for later performance comparison.
+
+
+17. Authority and backlinks
+
+Prioritise genuine local and industry relevance.
+
+Best opportunities:
+• Completed commercial customers linking to the Wall Envy project/case study.
+• Local chambers/business organisations.
+• Suppliers or industry partners.
+• Genuine Australian/local directories that are maintained and reputable.
+• Relevant local media or business publications.
+• Architecture, design, hospitality, education or commercial fitout partners where a real relationship exists.
+
+Avoid:
+• Purchased bulk backlink packages.
+• Hundreds of unrelated overseas directories.
+• Exact-match keyword spam links.
+• Guest-post networks with no audience or relevance.
+
+Local citations/directories mentioned in the source handoff included True Local, Yellow Pages, hipages and Houzz. David/business owner should assess relevance and category fit before creating listings rather than treating every directory as mandatory.
+
+
+18. Monthly SEO operating routine
+
+Once implementation is complete, SEO becomes an ongoing operating process.
+
+Monthly:
+1. Search Console → Performance → Queries.
+2. Identify relevant queries with impressions and average positions around 8–20.
+3. Find the page receiving those impressions.
+4. Improve that page for the query if it matches genuine search intent.
+5. Review pages losing clicks/impressions.
+6. Check indexing errors.
+7. Add new completed projects.
+8. Add new genuine reviews to Google Business Profile.
+9. Update project photos.
+10. Build one or two strong local links rather than chasing volume.
+
+Quarterly:
+• Review titles/meta descriptions for CTR opportunities.
+• Review location coverage.
+• Review internal linking.
+• Audit old/large images.
+• Check broken links and redirects.
+• Review which service pages generate enquiries.
+• Decide next content based on actual Search Console data, not keyword guesses alone.
+
+
+19. David’s implementation checklist
+
+PHASE A — FOUNDATION
+[ ] Confirm Google Search Console access
+[ ] Verify domain
+[ ] Submit sitemap
+[ ] Inspect homepage
+[ ] Inspect all key service pages
+[ ] Confirm Google Business Profile website URL
+[ ] Fix Sports & Sponsorships spelling
+
+PHASE B — URLS
+[ ] Export current URL list
+[ ] Decide KEEP vs CHANGE
+[ ] Create old → new redirect map
+[ ] Implement 301 redirects
+[ ] Update navigation
+[ ] Update internal links
+[ ] Test redirects
+[ ] Monitor 404s
+
+PHASE C — ON-PAGE
+[ ] Unique title on homepage
+[ ] Unique meta description on homepage
+[ ] One H1 on homepage
+[ ] Unique title/meta/H1 for Commercial
+[ ] Unique title/meta/H1 for Hospitality
+[ ] Unique title/meta/H1 for Healthcare
+[ ] Unique title/meta/H1 for Schools
+[ ] Unique title/meta/H1 for Sports
+[ ] Unique title/meta/H1 for Residential
+[ ] Unique title/meta/H1 for Print Surfaces
+[ ] Unique title/meta/H1 for Projects, FAQs, About and Contact
+[ ] Strengthen first 150–250 words on service pages
+[ ] Expand Services overview
+
+PHASE D — IMAGES
+[ ] Compress hero images
+[ ] Compress project images
+[ ] Add descriptive alt text
+[ ] Rename new uploads descriptively
+[ ] Check mobile image performance
+
+PHASE E — STRUCTURE
+[ ] Build internal links
+[ ] Link service pages to Projects
+[ ] Link Projects back to services
+[ ] Link FAQs to relevant services/process
+[ ] Link location pages to services when created
+
+PHASE F — SCHEMA
+[ ] Review existing Squarespace structured data
+[ ] Add only necessary LocalBusiness/Organization enhancements
+[ ] Add Service schema where appropriate
+[ ] Verify all business details
+[ ] Validate markup
+
+PHASE G — GROWTH
+[ ] Convert projects into case studies
+[ ] Build Central Coast location page
+[ ] Build Newcastle/Hunter location page
+[ ] Expand FAQs
+[ ] Publish comparison content
+[ ] Establish review request process
+[ ] Begin local backlink outreach
+
+PHASE H — REPORTING
+[ ] Record baseline Search Console clicks/impressions
+[ ] Record baseline top queries
+[ ] Record baseline indexed page count
+[ ] Review monthly
+[ ] Prioritise queries ranking 8–20
+
+
+20. Definition of done
+
+The initial SEO implementation is complete when:
+
+1. Google Search Console is verified and sitemap accepted.
+2. All core pages are indexable and use the intended canonical URLs.
+3. Misspelled Sports & Sponsorships references are fixed and redirected where needed.
+4. Every important page has a unique title, meta description and one primary H1.
+5. Every service page has a distinct keyword/search intent.
+6. Main service pages contain enough useful content for a customer to understand the offer.
+7. Important images are compressed and meaningful images have accurate alt text.
+8. Internal links connect services, process, surfaces, projects, FAQs and contact.
+9. Google Business Profile is accurate and points to the live website.
+10. Any custom schema is valid, accurate and non-duplicative.
+11. Major URL changes have 301 redirects.
+12. Search Console shows the updated pages can be crawled and indexed.
+13. There is a repeatable monthly SEO review process.
+
+
+21. Strategic guardrails
+
+Do:
+• Write for real customers first.
+• Use locations naturally.
+• Build unique pages around genuine service intent.
+• Use real projects and photographs.
+• Prioritise quality local links.
+• Measure results in Search Console.
+• Keep URLs stable once established.
+
+Do not:
+• Keyword-stuff headings, alt text or Google Business Profile.
+• Duplicate location pages with only the suburb changed.
+• Buy bulk backlinks.
+• Create thin generic AI articles simply to publish volume.
+• Change indexed URLs without redirects.
+• Create duplicate sitemap/robots infrastructure in Squarespace without a technical reason.
+• Publish unsupported technical claims about durability, safety, VOCs, cure times or materials.
+
+
+Source consolidation note
+
+This master plan consolidates:
+1. Wall Envy SEO & Technical Action Plan for David.
+2. Wall Envy SEO Improvement Plan — Step-by-Step.
+3. Wall Envy — SEO Implementation Handoff.
+
+Where those documents overlapped, duplicate tasks have been merged. Where they differed, this master plan prioritises the current Squarespace implementation context, preserves the strongest local SEO strategy, and treats custom-code examples as optional reference material rather than mandatory Squarespace steps.

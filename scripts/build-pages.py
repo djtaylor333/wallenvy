@@ -13,6 +13,36 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # /           -> Custom domain root (wallenvy.com.au)
 BASE_HREF = '/'
 
+# SEO
+CANONICAL_BASE  = "https://wallenvy.com.au"
+OG_IMAGE        = "https://wallenvy.com.au/assets/images/logo-banner.png"
+
+SCHEMA_LD = """<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wall Envy",
+  "description": "Premium direct-to-wall printing for commercial and residential spaces across the Central Coast, Newcastle and Hunter Region of NSW, Australia.",
+  "@id": "https://wallenvy.com.au",
+  "url": "https://wallenvy.com.au",
+  "telephone": "+61414698448",
+  "email": "info@wallenvy.com.au",
+  "logo": "https://wallenvy.com.au/assets/images/logo-banner.png",
+  "image": "https://wallenvy.com.au/assets/images/logo-banner.png",
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type": "City", "name": "Central Coast NSW"},
+    {"@type": "City", "name": "Newcastle NSW"},
+    {"@type": "City", "name": "Lake Macquarie NSW"},
+    {"@type": "AdministrativeArea", "name": "Hunter Region NSW"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/people/Wallenvy/61592586241845/",
+    "https://www.instagram.com/wallenvy.au"
+  ]
+}
+</script>"""
+
 # ─── Shared HTML Fragments ──────────────────────────────────────────────────
 
 NAV = """
@@ -151,7 +181,8 @@ FOOTER = """
 
 THEME_SCRIPT = """<script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>"""
 
-def page(title, desc, content, path=""):
+def page(title, desc, content, page_path=""):
+    canonical = f"{CANONICAL_BASE}{page_path}" if page_path else CANONICAL_BASE + "/"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,9 +190,20 @@ def page(title, desc, content, path=""):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | Wall Envy</title>
   <meta name="description" content="{desc}">
+  <link rel="canonical" href="{canonical}">
+  <!-- Open Graph -->
   <meta property="og:title" content="{title} | Wall Envy">
   <meta property="og:description" content="{desc}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:image" content="{OG_IMAGE}">
+  <meta property="og:site_name" content="Wall Envy">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title} | Wall Envy">
+  <meta name="twitter:description" content="{desc}">
+  <meta name="twitter:image" content="{OG_IMAGE}">
+  {SCHEMA_LD}
   <base href="{BASE_HREF}">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -210,8 +252,8 @@ PAGES = {}
 # ── services.html ──────────────────────────────────────────────────────────
 
 PAGES["services.html"] = page(
-    "Services",
-    "We provide direct-to-wall printing for commercial offices, residential homes, healthcare clinics, schools, hospitality venues, and sports facilities across the Central Coast & Hunter regions.",
+    "Wall Printing Services — Commercial, Residential & More",
+    "Explore Wall Envy's direct-to-wall printing services for commercial, residential, healthcare, schools, hospitality and sports facilities across the Central Coast & Newcastle.",
     inner_hero("What We Offer", 'Our <span class="gradient-text">Services</span>', "We print on any surface for any industry. Explore what we can do for your space.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -255,20 +297,21 @@ PAGES["services.html"] = page(
       </a>
     </div>
   </div>
-</section>""" + cta_strip()
+</section>""" + cta_strip(),
+    "/services.html"
 )
 
 # ── services/commercial.html ───────────────────────────────────────────────
 
 PAGES["services/commercial.html"] = page(
-    "Commercial & Office Printing",
-    "Transform your office or retail space with permanent, UV-cured direct-to-wall branding. High-impact corporate murals, logos, and signage on any surface.",
-    inner_hero("Services", 'Commercial &amp; <span class="gradient-text">Office Spaces</span>', "Branding that means business — from boardroom backdrops to retail feature walls.") + """
+    "Commercial Wall Printing Central Coast & Newcastle",
+    "Direct-to-wall printing for offices and commercial spaces across the Central Coast, Newcastle & Hunter. Logos, branded walls, feature murals and more.",
+    inner_hero("Services", 'Commercial Wall Printing <span class="gradient-text">Central Coast & Newcastle</span>', "Branding that means business — from boardroom backdrops to retail feature walls.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">First impressions matter. When a client walks into your office, your environment speaks volumes about your brand's professionalism, culture, and success. At Wall Envy, we help businesses transform blank, uninspiring walls into powerful branding tools using advanced, direct-to-wall printing technology.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">First impressions matter. When a client walks into your office, your environment speaks volumes about your brand's professionalism, culture, and success. At Wall Envy, we help businesses across the Central Coast, Newcastle, Lake Macquarie and the Hunter Region transform blank, uninspiring walls into powerful branding tools using advanced, direct-to-wall printing technology.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#127775;</div>
@@ -302,15 +345,16 @@ PAGES["services/commercial.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Ready to Upgrade Your Workspace?", "Print the <span class='gradient-text'>Impossible</span>", "Your business is unique, and your workspace should reflect that. From subtle, elegant designs to bold, floor-to-ceiling statements — let's discuss your brand's vision.", "Book Free Commercial Consultation")
+</section>""" + cta_strip("Ready to Upgrade Your Workspace?", "Print the <span class='gradient-text'>Impossible</span>", "Your business is unique, and your workspace should reflect that. From subtle, elegant designs to bold, floor-to-ceiling statements — let's discuss your brand's vision.", "Book Free Commercial Consultation"),
+    "/services/commercial.html"
 )
 
 # ── services/residential.html ──────────────────────────────────────────────
 
 PAGES["services/residential.html"] = page(
-    "Residential & Interior Design",
-    "Bespoke direct-to-wall printing for homes. Custom murals, feature walls, and architectural finishes. Safe for nurseries, durable outdoors, and beautiful everywhere.",
-    inner_hero("Services", 'Residential &amp; <span class="gradient-text">Interior Design</span>', "Bespoke architectural finishes that transform your home into a personal masterpiece.") + """
+    "Residential Wall Murals & Feature Walls",
+    "Bespoke direct-to-wall printed murals and feature walls for homes across the Central Coast, Newcastle and Hunter Region. Custom designs and high-resolution results.",
+    inner_hero("Services", 'Residential Wall Murals &amp; <span class="gradient-text">Feature Walls</span>', "Bespoke architectural finishes that transform your home into a personal masterpiece.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
@@ -353,15 +397,16 @@ PAGES["services/residential.html"] = page(
       <p style="margin:0;">We collaborate directly with interior designers, architects, and custom home builders across the Central Coast and Hunter regions. Wall Envy provides a unique, cutting-edge tool to offer your clients — large-scale custom imagery and textures without the limitations of traditional materials.</p>
     </div>
   </div>
-</section>""" + cta_strip("Transform Your Home Today", "Print the <span class='gradient-text'>Impossible</span>", "Your home deserves better than off-the-shelf decor. Let's create a bespoke finish that is exclusively yours.", "Book Residential Design Consultation")
+</section>""" + cta_strip("Transform Your Home Today", "Print the <span class='gradient-text'>Impossible</span>", "Your home deserves better than off-the-shelf decor. Let's create a bespoke finish that is exclusively yours.", "Book Residential Design Consultation"),
+    "/services/residential.html"
 )
 
 # ── services/healthcare.html ───────────────────────────────────────────────
 
 PAGES["services/healthcare.html"] = page(
-    "Healthcare & Clinics Wall Printing",
-    "Hygienic, seamless, low-VOC wall art for medical centres, dental clinics, pediatric wards, and aged care facilities. Safe for patients immediately after printing.",
-    inner_hero("Services", 'Healthcare &amp; <span class="gradient-text">Clinics</span>', "Hygienic, calming environments that improve patient experience without compromising clinical standards.") + """
+    "Healthcare & Clinic Wall Murals",
+    "Seamless direct-to-wall artwork for clinics and healthcare spaces across the Central Coast, Newcastle and Hunter. Create calm, branded patient environments.",
+    inner_hero("Services", 'Healthcare &amp; Clinic <span class="gradient-text">Wall Printing</span>', "Hygienic, calming environments that improve patient experience without compromising clinical standards.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
@@ -400,20 +445,21 @@ PAGES["services/healthcare.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Upgrade Your Practice Environment", "Print the <span class='gradient-text'>Impossible</span>", "Elevate your clinic from a sterile room to a modern, welcoming practice without compromising your rigorous health standards. We print on plaster, glass partitions, doors, and brick.", "Book Clinical Site Consultation")
+</section>""" + cta_strip("Upgrade Your Practice Environment", "Print the <span class='gradient-text'>Impossible</span>", "Elevate your clinic from a sterile room to a modern, welcoming practice without compromising your rigorous health standards. We print on plaster, glass partitions, doors, and brick.", "Book Clinical Site Consultation"),
+    "/services/healthcare.html"
 )
 
 # ── services/schools.html ─────────────────────────────────────────────────
 
 PAGES["services/schools.html"] = page(
-    "Schools & Education Wall Printing",
-    "Pick-proof, 100% child-safe direct-to-wall murals for schools, preschools, and daycares. Inspiring, permanent artwork that won't peel, fade, or off-gas.",
-    inner_hero("Services", 'Schools &amp; <span class="gradient-text">Education</span>', "Inspiring spaces that are built to last — because children deserve better than peeling vinyl.") + """
+    "School Wall Murals & Educational Wall Printing",
+    "Vibrant direct-to-wall murals for schools and learning spaces across the Central Coast, Newcastle and Hunter. Educational, branded and custom artwork.",
+    inner_hero("Services", 'School Wall Murals &amp; <span class="gradient-text">Educational Printing</span>', "Inspiring spaces that are built to last — because children deserve better than peeling vinyl.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">The physical environment of a school plays a massive role in how children learn, play, and feel. Blank, institutional walls don't inspire creativity — but traditional methods like vinyl decals rarely survive a classroom environment before curious hands peel them off. At Wall Envy, we provide vibrant, educational murals that bond directly to your walls. No peeling edges, no toxic fumes, no maintenance required.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">The physical environment of a school plays a massive role in how children learn, play, and feel. Blank, institutional walls don't inspire creativity — but traditional methods like vinyl decals rarely survive a classroom environment before curious hands peel them off. At Wall Envy, we provide vibrant, educational murals for schools across the Central Coast and Hunter Region that bond directly to your walls. No peeling edges, no toxic fumes, no maintenance required.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#128170;</div>
@@ -447,20 +493,21 @@ PAGES["services/schools.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Inspire Your Students", "Print the <span class='gradient-text'>Impossible</span>", "Whether you want to brighten a single classroom or completely rebrand your school's outdoor quadrangle, Wall Envy delivers vibrant, permanent results.", "Book Free School Site Consultation")
+</section>""" + cta_strip("Inspire Your Students", "Print the <span class='gradient-text'>Impossible</span>", "Whether you want to brighten a single classroom or completely rebrand your school's outdoor quadrangle, Wall Envy delivers vibrant, permanent results.", "Book Free School Site Consultation"),
+    "/services/schools.html"
 )
 
 # ── services/hospitality.html ─────────────────────────────────────────────
 
 PAGES["services/hospitality.html"] = page(
-    "Hospitality, Cafes & Retail Wall Printing",
-    "Create Instagram-worthy feature walls for cafes, restaurants, bars, and retail spaces. Zero downtime, no seams, built to last in high-humidity venues.",
-    inner_hero("Services", 'Hospitality, Cafes <br>&amp; <span class="gradient-text">Retail</span>', "Create spaces people want to photograph, share, and return to — over and over.") + """
+    "Cafe, Restaurant & Retail Wall Printing",
+    "Create standout feature walls for cafes, restaurants and retail spaces across the Central Coast, Newcastle and Hunter with direct-to-wall printing.",
+    inner_hero("Services", 'Cafe, Restaurant &amp; <span class="gradient-text">Retail Wall Printing</span>', "Create spaces people want to photograph, share, and return to — over and over.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">In the hospitality industry, the ambiance of your venue is just as important as the food on the plate. Today's customers are looking for an experience — and a striking, unique environment is the fastest way to turn a first-time visitor into a loyal regular. Wall Envy helps cafes, restaurants, bars, and boutique hotels create stunning, large-scale feature walls that people want to photograph and share.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">In the hospitality industry, the ambiance of your venue is just as important as the food on the plate. Today's customers are looking for an experience — and a striking, unique environment is the fastest way to turn a first-time visitor into a loyal regular. Wall Envy helps cafes, restaurants, bars, and boutique hotels across the Central Coast, Newcastle and Hunter Region create stunning, large-scale feature walls that people want to photograph and share.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#128247;</div>
@@ -494,20 +541,21 @@ PAGES["services/hospitality.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Ready to Transform Your Venue?", "Print the <span class='gradient-text'>Impossible</span>", "From subtle elegant designs to bold floor-to-ceiling statements — let's discuss your venue's vision.", "Book Free Venue Consultation")
+</section>""" + cta_strip("Ready to Transform Your Venue?", "Print the <span class='gradient-text'>Impossible</span>", "From subtle elegant designs to bold floor-to-ceiling statements — let's discuss your venue's vision.", "Book Free Venue Consultation"),
+    "/services/hospitality.html"
 )
 
 # ── services/sports.html ──────────────────────────────────────────────────
 
 PAGES["services/sports.html"] = page(
-    "Sports & Sponsorship Wall Printing",
-    "The Direct-to-Wall Sponsorship Model — premium permanent sponsor placements that generate revenue for your club. Impact-resistant, UV-cured ink for sports facilities.",
-    inner_hero("Services", 'Sports &amp; <span class="gradient-text">Sponsorship</span>', "Build your legacy — and your revenue — with the Direct-to-Wall Sponsorship Model.") + """
+    "Sports, Gym & Sponsorship Wall Printing",
+    "Turn sports and gym walls into branded, motivational or sponsorship spaces with direct-to-wall printing across the Central Coast and Hunter.",
+    inner_hero("Services", 'Sports, Gym &amp; <span class="gradient-text">Sponsorship Walls</span>', "Build your legacy — and your revenue — with the Direct-to-Wall Sponsorship Model.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">For local sports clubs, gyms, and community centres, sponsorships are the lifeblood of the organisation. But traditional sponsorship advertising — sagging vinyl banners and peeling stickers — makes your facility look cluttered and unprofessional. At Wall Envy, we offer the <strong>Direct-to-Wall Sponsorship Model</strong>: print your sponsors' logos directly onto your facility's walls, creating premium, permanent advertising real estate that sponsors are proud to pay for.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">For local sports clubs, gyms, and community centres across the Central Coast and Hunter Region, sponsorships are the lifeblood of the organisation. But traditional sponsorship advertising — sagging vinyl banners and peeling stickers — makes your facility look cluttered and unprofessional. At Wall Envy, we offer the <strong>Direct-to-Wall Sponsorship Model</strong>: print your sponsors' logos directly onto your facility's walls, creating premium, permanent advertising real estate that sponsors are proud to pay for.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#128170;</div>
@@ -545,15 +593,16 @@ PAGES["services/sports.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Maximise Your Wall Space", "Print the <span class='gradient-text'>Impossible</span>", "Stop settling for cheap banners. Upgrade your facility with permanent, impact-resistant graphics that reflect the pride of your club and the value of your sponsors.", "Book Free Facility Consultation")
+</section>""" + cta_strip("Maximise Your Wall Space", "Print the <span class='gradient-text'>Impossible</span>", "Stop settling for cheap banners. Upgrade your facility with permanent, impact-resistant graphics that reflect the pride of your club and the value of your sponsors.", "Book Free Facility Consultation"),
+    "/services/sports.html"
 )
 
 # ── printing.html ─────────────────────────────────────────────────────────
 
 PAGES["printing.html"] = page(
-    "Printing Surfaces",
-    "Direct-to-wall printing on any surface — walls, glass, metal, wood, tile, canvas, vehicles, and more. No Wall? No Problem. We print the impossible.",
-    inner_hero("Printing", 'Print on <span class="gradient-text">Any Surface</span>', "We're called 'direct-to-wall' — but we're certainly not limited to walls.") + """
+    "Wall Printing Surfaces — Brick, Glass, Wood & More",
+    "Explore surfaces Wall Envy can print on, including brick, glass, concrete, metal, wood and painted walls using direct-to-surface printing on the Central Coast & Hunter.",
+    inner_hero("Printing", 'Direct Printing on <span class="gradient-text">Any Surface</span>', "We're called 'direct-to-wall' — but we're certainly not limited to walls.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <p class="reveal" style="font-size:1.05rem;max-width:720px;margin-bottom:3rem;">We can print on all kinds of surfaces — it doesn't have to be a blank white wall. We can print on glass, wood, canvas, metal, walls, and floors. If a surface is flat and vertical (or can be propped up vertically), there is a very good chance we can print stunning, high-definition art right onto it.</p>
@@ -605,14 +654,15 @@ PAGES["printing.html"] = page(
       </a>
     </div>
   </div>
-</section>""" + cta_strip("Have a Unique Surface?", "Print the <span class='gradient-text'>Impossible</span>", "From custom tabletops to giant event signage — if we can put it in front of the printer, we can bring your vision to life. Don't be afraid to ask!", "Book Free Surface Consultation")
+</section>""" + cta_strip("Have a Unique Surface?", "Print the <span class='gradient-text'>Impossible</span>", "From custom tabletops to giant event signage — if we can put it in front of the printer, we can bring your vision to life. Don't be afraid to ask!", "Book Free Surface Consultation"),
+    "/printing.html"
 )
 
 # ── printing/embossed-relief.html ─────────────────────────────────────────
 
 PAGES["printing/embossed-relief.html"] = page(
-    "Embossed & Relief Printing",
-    "True 3D tactile wall printing. We build up layers of UV-curable ink to create raised patterns, textures, and architectural features you can actually feel.",
+    "Embossed & Relief Wall Printing",
+    "Add physical depth and texture to your walls with embossed UV wall printing. Raised patterns, architectural textures and 3D effects. Central Coast & Newcastle.",
     inner_hero("Printing", 'Embossed &amp; <span class="gradient-text">Relief Printing</span>', "Add physical depth and touch to your walls — a multi-sensory experience unlike anything else.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -652,14 +702,15 @@ PAGES["printing/embossed-relief.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Ready to Add Physical Depth?", "Print the <span class='gradient-text'>Impossible</span>", "Combine colour, imagery, and physical dimension into a single seamless application. Let's discuss your tactile design ideas.", "Book Free Design Consultation")
+</section>""" + cta_strip("Ready to Add Physical Depth?", "Print the <span class='gradient-text'>Impossible</span>", "Combine colour, imagery, and physical dimension into a single seamless application. Let's discuss your tactile design ideas.", "Book Free Design Consultation"),
+    "/printing/embossed-relief.html"
 )
 
 # ── printing/vehicle-branding.html ────────────────────────────────────────
 
 PAGES["printing/vehicle-branding.html"] = page(
-    "Vehicle & Fleet Branding",
-    "Permanent, seamless vehicle branding printed directly onto vans, trucks, and trailers. No vinyl wrap bubbling or peeling — ever.",
+    "Vehicle & Fleet Branding — Direct Print",
+    "Permanent direct-to-surface vehicle branding for vans, trucks and trailers across the Central Coast & Hunter. No vinyl wraps. UV-cured ink that won't peel or bubble.",
     inner_hero("Printing", 'Vehicle &amp; Fleet <span class="gradient-text">Branding</span>', "The end of peeling vinyl wraps — permanent, seamless branding direct to your vehicle.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -702,14 +753,15 @@ PAGES["printing/vehicle-branding.html"] = page(
       <p style="margin:0;">We print directly onto <strong>painted automotive metal, bare aluminium, fibreglass, and composite trailer panelling</strong>. Stop replacing tired stickers and invest in permanent, professional branding for your fleet.</p>
     </div>
   </div>
-</section>""" + cta_strip("Ready to Upgrade Your Fleet?", "Print the <span class='gradient-text'>Impossible</span>", "Let's discuss your vehicle branding requirements and book a free vehicle quote and measure.", "Book Free Vehicle Quote")
+</section>""" + cta_strip("Ready to Upgrade Your Fleet?", "Print the <span class='gradient-text'>Impossible</span>", "Let's discuss your vehicle branding requirements and book a free vehicle quote and measure.", "Book Free Vehicle Quote"),
+    "/printing/vehicle-branding.html"
 )
 
 # ── how-it-works.html ─────────────────────────────────────────────────────
 
 PAGES["how-it-works.html"] = page(
-    "How It Works",
-    "4 simple steps: Design & Consultation, Preparation, The Print, Final Reveal. Clean, fast, and completely hassle-free direct-to-wall printing.",
+    "How Wall Printing Works — 4 Simple Steps",
+    "Learn how Wall Envy's direct-to-wall printing process works in 4 clean steps. Consultation, digital proofing, the print, and final reveal. Fast, clean and hassle-free.",
     inner_hero("Our Process", 'How It <span class="gradient-text">Works</span>', "Turning your blank walls into masterpieces in 4 simple steps.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -769,14 +821,15 @@ PAGES["how-it-works.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Ready to Begin?", "Print the <span class='gradient-text'>Impossible</span>", "Whether you have a finished design or just a rough idea — we're here to help every step of the way. Book your free design consultation and quote today.", "Book Free Design Consultation")
+</section>""" + cta_strip("Ready to Begin?", "Print the <span class='gradient-text'>Impossible</span>", "Whether you have a finished design or just a rough idea — we're here to help every step of the way. Book your free design consultation and quote today.", "Book Free Design Consultation"),
+    "/how-it-works.html"
 )
 
 # ── why-choose-us.html ────────────────────────────────────────────────────
 
 PAGES["why-choose-us.html"] = page(
     "Why Choose Direct-to-Wall Printing",
-    "5 reasons why direct-to-wall printing beats wallpaper and vinyl wraps: seamless finish, no peeling, any surface, no VOCs, and unlimited creative freedom.",
+    "See how direct-to-wall printing compares to wallpaper and vinyl wraps on 5 key points: seamless finish, durability, surface flexibility, no VOCs and creative freedom.",
     inner_hero("The Wall Envy Advantage", 'Why Choose <span class="gradient-text">Direct-to-Wall?</span>', "For decades, custom wall art meant messy glues and peeling vinyl. Our technology eliminates those headaches permanently.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -833,8 +886,8 @@ proj_items = "".join(
 )
 
 PAGES["projects.html"] = page(
-    "Projects",
-    "Browse Wall Envy's project gallery — stunning direct-to-wall printing installations across the Central Coast & Hunter regions.",
+    "Wall Printing Projects Gallery",
+    "Browse Wall Envy's completed direct-to-wall printing projects across the Central Coast and Hunter. Commercial, residential, hospitality, schools and more.",
     inner_hero("Our Work", 'Project <span class="gradient-text">Gallery</span>', "A showcase of walls transformed — commercial, residential, healthcare, schools, hospitality, and sports.") + f"""
 <section class="section page-content" style="padding-top:2rem;">
   <div class="container">
@@ -919,8 +972,8 @@ faq_html = '\n'.join(
 )
 
 PAGES["faqs.html"] = page(
-    "Frequently Asked Questions",
-    "Answers to common questions about wall printing — process, surfaces, cost, designs, lifespan, and how to get started with Wall Envy.",
+    "Wall Printing FAQs",
+    "Answers to common questions about direct-to-wall printing — surfaces, cost, process, durability, preparation and more. Central Coast & Newcastle.",
     inner_hero("Got Questions?", 'Frequently Asked <span class="gradient-text">Questions</span>', "Everything you need to know about direct-to-wall printing.") + f"""
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -935,14 +988,15 @@ PAGES["faqs.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip()
+</section>""" + cta_strip(),
+    "/faqs.html"
 )
 
 # ── contact.html ──────────────────────────────────────────────────────────
 
 PAGES["contact.html"] = page(
-    "Contact Us",
-    "Book your free Wall Envy consultation. Call 0414 698 448, email info@wallenvy.com.au, or fill in our quick contact form — we'll be in touch shortly.",
+    "Contact Wall Envy — Book a Free Consultation",
+    "Book your free direct-to-wall printing consultation with Wall Envy. Call 0414 698 448 or fill in our form. Central Coast, Newcastle & Hunter Region.",
     inner_hero("Let's Talk", 'Get in <span class="gradient-text">Touch</span>', "Book your free consultation and site measure today. No obligation, no pressure — just great ideas.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -1032,7 +1086,8 @@ PAGES["contact.html"] = page(
       </div>
     </div>
   </div>
-</section>"""
+</section>""",
+    "/contact.html"
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────
@@ -1040,8 +1095,8 @@ PAGES["contact.html"] = page(
 # ── about.html ───────────────────────────────────────────────────────────────
 
 PAGES["about.html"] = page(
-    "About Us",
-    "Wall Envy is a proudly family-owned direct-to-wall printing business based on the Central Coast of NSW. Meet the four equal partners behind the technology.",
+    "About Wall Envy — Meet the Family Team",
+    "Wall Envy is a family-owned direct-to-wall printing business on the Central Coast. Meet Jon, Nicole, Arianne and David — the four equal partners behind the print.",
     inner_hero("Our Story", 'About <span class="gradient-text">Wall Envy</span>', "Transforming blank walls into masterpieces &mdash; a family-owned business built on honesty, craftsmanship, and creative vision.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
@@ -1140,7 +1195,8 @@ PAGES["about.html"] = page(
     </div>
 
   </div>
-</section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let&rsquo;s talk about what we can create together.", "Book Free Consultation")
+</section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let&rsquo;s talk about what we can create together.", "Book Free Consultation"),
+    "/about.html"
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────
@@ -1159,7 +1215,8 @@ PAGES["404.html"] = page(
       <a href="contact.html" class="btn btn-outline">Contact Us</a>
     </div>
   </div>
-</section>"""
+</section>""",
+    "/404.html"
 )
 
 # ─── Write all pages ─────────────────────────────────────────────────────────
