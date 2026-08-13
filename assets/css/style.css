@@ -330,13 +330,13 @@ p { color: var(--text2); }
 .dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;      /* no gap — padding-top bridges the space without breaking hover */
   left: 0;
   background: var(--card);
   border: 1px solid var(--glass-border);
   border-radius: 10px;
   min-width: 220px;
-  padding: 0.5rem;
+  padding: 8px 0.5rem 0.5rem; /* 8px top padding replaces the old 8px gap */
   box-shadow: var(--sh-lg);
   backdrop-filter: blur(20px);
   z-index: 999;

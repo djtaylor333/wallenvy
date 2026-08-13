@@ -139,6 +139,21 @@
     }, 150);
   }
 
+  /* ---- Nav Dropdowns (hover with delay prevents accidental close) ---- */
+  function initDropdowns() {
+    document.querySelectorAll('.nav-links > li').forEach(li => {
+      const dropdown = li.querySelector('.dropdown');
+      if (!dropdown) return;
+      let hideTimer;
+      const show = () => { clearTimeout(hideTimer); dropdown.style.display = 'block'; };
+      const hide = () => { hideTimer = setTimeout(() => { dropdown.style.display = ''; }, 150); };
+      li.addEventListener('mouseenter', show);
+      li.addEventListener('mouseleave', hide);
+      dropdown.addEventListener('mouseenter', show);
+      dropdown.addEventListener('mouseleave', hide);
+    });
+  }
+
   /* ---- Tally Form Theme Sync ---- */
   function syncTallyForms() {
     const darkWrap  = document.querySelector('.tally-dark');

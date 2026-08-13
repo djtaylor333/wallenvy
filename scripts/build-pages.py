@@ -268,7 +268,7 @@ PAGES["services/commercial.html"] = page(
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">First impressions matter. When a client walks into your office, your environment speaks volumes about your brand's professionalism, culture, and success. At Wall Envy, we help businesses transform blank, uninspiring walls into powerful branding tools using advanced, German-engineered direct-to-wall printing technology.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">First impressions matter. When a client walks into your office, your environment speaks volumes about your brand's professionalism, culture, and success. At Wall Envy, we help businesses transform blank, uninspiring walls into powerful branding tools using advanced, direct-to-wall printing technology.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#127775;</div>
@@ -289,7 +289,7 @@ PAGES["services/commercial.html"] = page(
         </div>
       </div>
       <div class="reveal reveal-delay-2">
-        <img src="/assets/images/projects/proj-06.jpg" alt="Commercial wall printing project" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
+        <img src="assets/images/projects/Commercial_Office_Concept.png" alt="Commercial office wall printing project" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
       </div>
     </div>
     <div style="margin-top:3rem;">
@@ -387,7 +387,7 @@ PAGES["services/healthcare.html"] = page(
         </div>
       </div>
       <div class="reveal reveal-delay-2">
-        <img src="/assets/images/projects/proj-15.jpg" alt="Healthcare wall printing" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
+        <img src="assets/images/projects/Healthcare_Clinic.png" alt="Healthcare clinic wall printing" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
       </div>
     </div>
     <div style="margin-top:3rem;">
@@ -481,7 +481,7 @@ PAGES["services/hospitality.html"] = page(
         </div>
       </div>
       <div class="reveal reveal-delay-2">
-        <img src="/assets/images/projects/proj-17.jpg" alt="Hospitality wall printing" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
+        <img src="assets/images/projects/Cafe_Restuarant.jpeg" alt="Hospitality cafe restaurant wall printing" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
       </div>
     </div>
     <div style="margin-top:3rem;">
@@ -898,7 +898,7 @@ PAGES["projects.html"] = page(
 faqs = [
     ("What Is Wall Printing?", "Wall printing is an innovative technology that allows us to print high-quality, intricate designs directly onto your walls. It's a new alternative to traditional methods like painting or wallpapering."),
     ("What is the Wall Printing Process?", "The process begins with a consultation where we discuss your ideas, preferences, and specifics of the space. Then our designers create high-resolution art. We use advanced wall printing machines to translate the design onto your wall with meticulous attention to detail."),
-    ("What Can Be Printed On?", "Yes, we can print on a diverse range of surfaces, including Sheetrock (drywall), Plaster Walls, Brick Walls, Glass Walls, Metal Walls, and Wood Walls. This also includes floors. We do not however print on ceilings."),
+    ("What Can Be Printed On?", "Yes, we can print on a diverse range of surfaces, including Gyprock (drywall), Plaster Walls, Brick Walls, Glass Walls, Metal Walls, and Wood Walls. This also includes floors. We do not however print on ceilings."),
     ("What Designs Can Be Printed?", "We can print a virtually unlimited range of designs, from subtle patterns to vibrant, large-scale murals."),
     ("Can I Use My Own Design or Image?", "Absolutely! We work closely with each client to understand their vision, and we can use any high-resolution image you provide. If the image is not high resolution, our design team can try and enhance the image for your size requirements. Vector art can be set to any size you want."),
     ("How Long Does the Wall Printing Process Take?", "The duration of the process depends on the size of the wall and the complexity of the design. We can provide a more accurate estimate after the initial consultation."),
@@ -907,6 +907,7 @@ faqs = [
     ("Can You Help with Design Ideas?", "Absolutely! Our skilled designers can work with you to come up with a design that suits your space and personal style. Our team will send you proofs which you will provide an approval on before we start any work."),
     ("How Far in Advance Do I Need to Schedule?", "The lead time can vary depending on our current schedule and the size of your project. We are taking on projects now and we can consult with you on scheduling."),
     ("How Long Does the Print Last?", "With proper care, a wall print can last for many years. Typically, indoor prints can last 12 years and outdoor 5 years. For outdoor prints we suggest adding a protective layer of clear coat which would extend the lifespan outdoors."),
+    ("Do I Need to Prepare My Wall Before You Arrive?", "Because we assess your wall's surface material during your initial consultation, there is very little preparation left for you to do! We simply ask that the wall is clean, dry, and free of major dust or cobwebs before we arrive to print. If your wall has large holes, deep scratches, or flaking paint, we recommend patching and sanding those spots beforehand to ensure the most flawless finish possible. Our team handles the rest!"),
 ]
 
 faq_html = '\n'.join(
