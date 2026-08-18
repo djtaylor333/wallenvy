@@ -1111,6 +1111,23 @@ p { color: var(--text2); }
 .insta-card h4 { margin-bottom: 0.25rem; }
 .insta-card p  { font-size: 0.875rem; color: var(--text2); margin: 0; }
 
+/* YouTube promo card */
+.youtube-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(255,0,0,0.14), rgba(200,0,0,0.08));
+  border: 1px solid rgba(255,0,0,0.28);
+  border-radius: var(--card-r);
+  padding: 1.75rem;
+  margin-top: 1.5rem;
+  transition: all var(--t);
+}
+.youtube-card:hover { border-color: rgba(255,0,0,0.48); transform: translateY(-2px); }
+.youtube-icon { font-size: 2.5rem; flex-shrink: 0; }
+.youtube-card h4 { margin-bottom: 0.25rem; }
+.youtube-card p  { font-size: 0.875rem; color: var(--text2); margin: 0; }
+
 /* =====================================================
    Footer
    ===================================================== */
