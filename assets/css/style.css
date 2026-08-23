@@ -56,7 +56,7 @@
   --grad-cta:    linear-gradient(150deg, #142420 0%, #1D3530 50%, #0E2018 100%);
 
   /* Layout */
-  --nav-h:       70px;
+  --nav-h:       74px;
   --max-w:       1200px;
   --section-py:  clamp(60px, 8vw, 120px);
   --card-r:      16px;
@@ -268,7 +268,7 @@ p  { color: var(--text2); }
   border-radius: 10px;
   overflow: hidden;
   background: #162620;
-  padding: 4px 10px;
+  padding: 6px 14px;
   transition: opacity var(--t), box-shadow var(--t);
 }
 .nav-logo:hover {
@@ -276,7 +276,7 @@ p  { color: var(--text2); }
   box-shadow: 0 0 18px rgba(42,139,124,0.35);
 }
 .nav-logo-img {
-  height: 50px;
+  height: 48px;
   width: auto;
   display: block;
 }
