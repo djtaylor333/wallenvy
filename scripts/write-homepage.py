@@ -1,3 +1,13 @@
+"""
+Wall Envy — Generates the new index.html homepage
+Run: python scripts/write-homepage.py
+"""
+
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+HOMEPAGE = """\
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -454,3 +464,9 @@
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
+"""
+
+out_path = os.path.join(ROOT, "index.html")
+with open(out_path, "w", encoding="utf-8") as f:
+    f.write(HOMEPAGE)
+print("Written: index.html")

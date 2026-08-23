@@ -1,3 +1,18 @@
+"""
+Wall Envy — Coastal & Fresh Redesign Helper
+Writes:
+  - assets/css/style.css    (complete new design)
+  - Redirect pages for old URL paths
+Run: python scripts/apply-redesign.py
+"""
+
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# ─── New CSS ───────────────────────────────────────────────────────────────
+
+NEW_CSS = """\
 /* =====================================================
    WALL ENVY — Coastal & Fresh (2026 Redesign)
    Central Coast & Hunter NSW, Australia
@@ -1336,3 +1351,42 @@ p  { color: var(--text2); }
   0%, 100% { box-shadow: 0 0 20px rgba(42,139,124,0.2); }
   50%       { box-shadow: 0 0 40px rgba(42,139,124,0.45); }
 }
+"""
+
+# ─── Redirect HTML template ────────────────────────────────────────────────
+
+REDIRECT_TMPL = (
+    '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
+    '<meta charset="UTF-8">\n'
+    '<meta http-equiv="refresh" content="0;url={url}">\n'
+    '<link rel="canonical" href="https://wallenvy.com.au{url}">\n'
+    '<title>Redirecting...</title>\n'
+    '</head>\n<body>\n'
+    '<p>Redirecting to <a href="{url}">{url}</a></p>\n'
+    '</body>\n</html>\n'
+)
+
+# ─── Write CSS ─────────────────────────────────────────────────────────────
+
+css_path = os.path.join(ROOT, "assets", "css", "style.css")
+with open(css_path, "w", encoding="utf-8") as f:
+    f.write(NEW_CSS)
+print("Written: assets/css/style.css")
+
+# ─── Create redirect pages ────────────────────────────────────────────────
+
+redirects = [
+    ("home/contact",                              "/contact/"),
+    ("home/services/sports-sponshorships",        "/services/sports/"),
+    ("home/services/sports-sponsorships",         "/services/sports/"),
+]
+
+for path, target in redirects:
+    dir_path = os.path.join(ROOT, path)
+    os.makedirs(dir_path, exist_ok=True)
+    file_path = os.path.join(dir_path, "index.html")
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(REDIRECT_TMPL.format(url=target))
+    print(f"Created redirect: /{path}/ → {target}")
+
+print("\nDone!")

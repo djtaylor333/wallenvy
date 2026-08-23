@@ -49,36 +49,36 @@ NAV = """
 <nav class="site-nav" id="site-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="./" class="nav-logo" aria-label="Wall Envy Home">
-        <img src="assets/images/logo-text.png" alt="Wall Envy" class="nav-logo-img">
+      <a href="/" class="nav-logo" aria-label="Wall Envy Home">
+        <img src="/assets/images/logo-text.png" alt="Wall Envy" class="nav-logo-img">
       </a>
       <ul class="nav-links">
-        <li><a href="./" class="nav-link" data-path="/">Home</a></li>
+        <li><a href="/" class="nav-link" data-path="/">Home</a></li>
         <li>
-          <a href="services.html" class="nav-link" data-path="/services">Services <span class="arrow">&#9660;</span></a>
+          <a href="/services/" class="nav-link" data-path="/services">Services <span class="arrow">&#9660;</span></a>
           <div class="dropdown">
-            <a href="services/commercial.html">Commercial &amp; Office</a>
-            <a href="services/residential.html">Residential &amp; Interior</a>
-            <a href="services/healthcare.html">Healthcare &amp; Clinics</a>
-            <a href="services/schools.html">Schools &amp; Education</a>
-            <a href="services/hospitality.html">Hospitality, Cafes &amp; Retail</a>
-            <a href="services/sports.html">Sports &amp; Sponsorship</a>
+            <a href="/services/commercial/">Commercial &amp; Office</a>
+            <a href="/services/residential/">Residential &amp; Interior</a>
+            <a href="/services/healthcare/">Healthcare &amp; Clinics</a>
+            <a href="/services/schools/">Schools &amp; Education</a>
+            <a href="/services/hospitality/">Hospitality, Cafes &amp; Retail</a>
+            <a href="/services/sports/">Sports &amp; Sponsorship</a>
           </div>
         </li>
         <li>
-          <a href="printing.html" class="nav-link" data-path="/printing">Printing <span class="arrow">&#9660;</span></a>
+          <a href="/printing/" class="nav-link" data-path="/printing">Printing <span class="arrow">&#9660;</span></a>
           <div class="dropdown">
-            <a href="printing.html">Print Surfaces</a>
-            <a href="printing/embossed-relief.html">Embossed &amp; Relief</a>
-            <a href="printing/vehicle-branding.html">Vehicle Branding</a>
+            <a href="/printing/">Print Surfaces</a>
+            <a href="/printing/embossed-relief/">Embossed &amp; Relief</a>
+            <a href="/printing/vehicle-branding/">Vehicle Branding</a>
           </div>
         </li>
-        <li><a href="about.html" class="nav-link" data-path="/about">About Us</a></li>
-        <li><a href="how-it-works.html" class="nav-link" data-path="/how-it-works">How It Works</a></li>
-        <li><a href="why-choose-us.html" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
-        <li><a href="projects.html" class="nav-link" data-path="/projects">Projects</a></li>
-        <li><a href="faqs.html" class="nav-link" data-path="/faqs">FAQs</a></li>
-        <li><a href="contact.html" class="nav-link" data-path="/contact" style="color:var(--cyan);font-weight:600;">Contact</a></li>
+        <li><a href="/about/" class="nav-link" data-path="/about">About Us</a></li>
+        <li><a href="/how-it-works/" class="nav-link" data-path="/how-it-works">How It Works</a></li>
+        <li><a href="/why-choose-us/" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
+        <li><a href="/projects/" class="nav-link" data-path="/projects">Projects</a></li>
+        <li><a href="/faqs/" class="nav-link" data-path="/faqs">FAQs</a></li>
+        <li><a href="/contact/" class="nav-link" data-path="/contact" style="color:var(--teal);font-weight:600;">Contact</a></li>
       </ul>
       <button class="theme-toggle" aria-label="Toggle theme">
         <span class="icon-sun">&#9728;&#65039;</span>
@@ -93,25 +93,25 @@ NAV = """
 <div class="mobile-menu" id="mobile-menu">
   <a href="/">Home</a>
   <div class="mobile-section-label">Services</div>
-  <a href="services.html">All Services</a>
-  <a href="services/commercial.html" style="padding-left:1.75rem">Commercial &amp; Office</a>
-  <a href="services/residential.html" style="padding-left:1.75rem">Residential &amp; Interior</a>
-  <a href="services/healthcare.html" style="padding-left:1.75rem">Healthcare &amp; Clinics</a>
-  <a href="services/schools.html" style="padding-left:1.75rem">Schools &amp; Education</a>
-  <a href="services/hospitality.html" style="padding-left:1.75rem">Hospitality, Cafes &amp; Retail</a>
-  <a href="services/sports.html" style="padding-left:1.75rem">Sports &amp; Sponsorship</a>
+  <a href="/services/">All Services</a>
+  <a href="/services/commercial/" style="padding-left:1.75rem">Commercial &amp; Office</a>
+  <a href="/services/residential/" style="padding-left:1.75rem">Residential &amp; Interior</a>
+  <a href="/services/healthcare/" style="padding-left:1.75rem">Healthcare &amp; Clinics</a>
+  <a href="/services/schools/" style="padding-left:1.75rem">Schools &amp; Education</a>
+  <a href="/services/hospitality/" style="padding-left:1.75rem">Hospitality, Cafes &amp; Retail</a>
+  <a href="/services/sports/" style="padding-left:1.75rem">Sports &amp; Sponsorship</a>
   <hr>
   <div class="mobile-section-label">Printing</div>
-  <a href="printing.html">Print Surfaces</a>
-  <a href="printing/embossed-relief.html" style="padding-left:1.75rem">Embossed &amp; Relief</a>
-  <a href="printing/vehicle-branding.html" style="padding-left:1.75rem">Vehicle Branding</a>
+  <a href="/printing/">Print Surfaces</a>
+  <a href="/printing/embossed-relief/" style="padding-left:1.75rem">Embossed &amp; Relief</a>
+  <a href="/printing/vehicle-branding/" style="padding-left:1.75rem">Vehicle Branding</a>
   <hr>
-  <a href="how-it-works.html">How It Works</a>
-  <a href="why-choose-us.html">Why Choose Us</a>
-  <a href="about.html">About Us</a>
-  <a href="projects.html">Projects</a>
-  <a href="faqs.html">FAQs</a>
-  <a href="contact.html" style="color:var(--cyan);font-weight:700;">Contact Us</a>
+  <a href="/how-it-works/">How It Works</a>
+  <a href="/why-choose-us/">Why Choose Us</a>
+  <a href="/about/">About Us</a>
+  <a href="/projects/">Projects</a>
+  <a href="/faqs/">FAQs</a>
+  <a href="/contact/" style="color:var(--teal);font-weight:700;">Contact Us</a>
 </div>
 """
 
@@ -120,9 +120,9 @@ FOOTER = """
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="./" class="footer-logo">WALL ENVY</a>
+        <a href="/" class="footer-logo">Wall Envy</a>
         <p>Any Design. Any Surface. Print the Impossible.<br>
-           Serving the Central Coast &amp; Hunter regions of NSW, Australia.</p>
+           Serving the Central Coast, Newcastle &amp; Hunter regions of NSW, Australia.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -130,42 +130,45 @@ FOOTER = """
           <a href="https://www.instagram.com/wallenvy.au" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
+          <a href="https://www.youtube.com/channel/UCV8Wj8k-ik_kTPBdUL2YVKw" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a2.974 2.974 0 0 0-2.092-2.104C19.555 3.5 12 3.5 12 3.5s-7.555 0-9.406.582A2.974 2.974 0 0 0 .502 6.186 31.222 31.222 0 0 0 0 12a31.222 31.222 0 0 0 .502 5.814 2.974 2.974 0 0 0 2.092 2.104C4.445 20.5 12 20.5 12 20.5s7.555 0 9.406-.582a2.974 2.974 0 0 0 2.092-2.104A31.222 31.222 0 0 0 24 12a31.222 31.222 0 0 0-.502-5.814zM9.75 15.568V8.432L16.5 12l-6.75 3.568z"/></svg>
+          </a>
         </div>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
         <ul>
-          <li><a href="services/commercial.html">Commercial &amp; Office</a></li>
-          <li><a href="services/residential.html">Residential</a></li>
-          <li><a href="services/healthcare.html">Healthcare</a></li>
-          <li><a href="services/schools.html">Schools &amp; Education</a></li>
-          <li><a href="services/hospitality.html">Hospitality &amp; Retail</a></li>
-          <li><a href="services/sports.html">Sports &amp; Sponsorship</a></li>
+          <li><a href="/services/commercial/">Commercial &amp; Office</a></li>
+          <li><a href="/services/residential/">Residential</a></li>
+          <li><a href="/services/healthcare/">Healthcare</a></li>
+          <li><a href="/services/schools/">Schools &amp; Education</a></li>
+          <li><a href="/services/hospitality/">Hospitality &amp; Retail</a></li>
+          <li><a href="/services/sports/">Sports &amp; Sponsorship</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Printing</h5>
+        <h5>More</h5>
         <ul>
-          <li><a href="printing.html">Print Surfaces</a></li>
-          <li><a href="printing/embossed-relief.html">Embossed &amp; Relief</a></li>
-          <li><a href="printing/vehicle-branding.html">Vehicle Branding</a></li>
-          <li><a href="how-it-works.html">How It Works</a></li>
-          <li><a href="why-choose-us.html">Why Choose Us</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="/printing/">Print Surfaces</a></li>
+          <li><a href="/printing/embossed-relief/">Embossed &amp; Relief</a></li>
+          <li><a href="/printing/vehicle-branding/">Vehicle Branding</a></li>
+          <li><a href="/how-it-works/">How It Works</a></li>
+          <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/projects/">Projects</a></li>
         </ul>
       </div>
       <div class="footer-col footer-contact">
         <h5>Get In Touch</h5>
         <p>&#128222; <a href="tel:0414698448" style="color:inherit;">0414 698 448</a></p>
         <p>&#9993;&#65039; <a href="mailto:info@wallenvy.com.au" style="color:inherit;">info@wallenvy.com.au</a></p>
-        <p>&#128205; Central Coast &amp; Hunter, NSW</p>
-        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:1rem;display:inline-flex;">Get Free Quote</a>
+        <p>&#128205; Central Coast, Newcastle &amp; Hunter, NSW</p>
+        <a href="/contact/" class="btn btn-primary btn-sm" style="margin-top:1rem;display:inline-flex;">Get Free Quote</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 Wall Envy Aus. All Rights Reserved.</span>
-      <span><a href="faqs.html" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="about.html" style="color:inherit;">About Us</a> &nbsp;&middot;&nbsp; <a href="contact.html" style="color:inherit;">Contact</a></span>
+      <span><a href="/faqs/" style="color:inherit;">FAQs</a> &nbsp;&middot;&nbsp; <a href="/about/" style="color:inherit;">About Us</a> &nbsp;&middot;&nbsp; <a href="/contact/" style="color:inherit;">Contact</a></span>
     </div>
   </div>
 </footer>
@@ -179,7 +182,7 @@ FOOTER = """
 </div>
 """
 
-THEME_SCRIPT = """<script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);})();</script>"""
+THEME_SCRIPT = """<script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t='light';document.documentElement.setAttribute('data-theme',t);})();</script>"""
 
 def page(title, desc, content, page_path=""):
     canonical = f"{CANONICAL_BASE}{page_path}" if page_path else CANONICAL_BASE + "/"
@@ -219,7 +222,7 @@ def page(title, desc, content, page_path=""):
 
 # ─── Shared "Print the Impossible" CTA used on all service/printing pages ──
 
-def cta_strip(kicker="Ready to Get Started?", headline="Print the Impossible", sub="", cta_label="Book Free Consultation", cta_link="/contact.html"):
+def cta_strip(kicker="Ready to Get Started?", headline="Print the Impossible", sub="", cta_label="Book Free Consultation", cta_link="/contact/"):
     sub_html = f"<p>{sub}</p>" if sub else "<p>Whether you have a finished design ready to print or just a rough idea, we&#8217;re here to help. Book your free consultation and site measure today.</p>"
     return f"""
 <section class="cta-strip">
@@ -230,7 +233,7 @@ def cta_strip(kicker="Ready to Get Started?", headline="Print the Impossible", s
     {sub_html}
     <div class="cta-btns">
       <a href="{cta_link}" class="btn btn-primary btn-lg">{cta_label}</a>
-      <a href="projects.html" class="btn btn-outline btn-lg">See Our Work</a>
+      <a href="/projects/" class="btn btn-outline btn-lg">See Our Work</a>
     </div>
   </div>
 </section>"""
@@ -252,44 +255,44 @@ PAGES = {}
 # ── services.html ──────────────────────────────────────────────────────────
 
 PAGES["services.html"] = page(
-    "Wall Printing Services — Commercial, Residential & More",
-    "Explore Wall Envy's direct-to-wall printing services for commercial, residential, healthcare, schools, hospitality and sports facilities across the Central Coast & Newcastle.",
-    inner_hero("What We Offer", 'Our <span class="gradient-text">Services</span>', "We print on any surface for any industry. Explore what we can do for your space.") + """
+    "Direct-to-Wall Printing Services | Central Coast & Newcastle",
+    "Explore Wall Envy's direct-to-wall printing services for businesses, schools, hospitality, healthcare, sports and homes across Central Coast & Newcastle.",
+    inner_hero("What We Offer", 'Direct-to-Wall <span class="gradient-text">Printing Services</span>', "We print on any surface for any industry. Explore what we can do for your space across the Central Coast, Newcastle and Hunter Region.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <p class="reveal" style="max-width:720px;margin-bottom:3rem;">We provide printing services on a variety of surfaces to a variety of businesses. We aren't limited to commercial — we can do residential, small businesses, hospitals, restaurants, schools, stadiums — anywhere you can think of. Or if you need a custom design, we can work with you on something that perfectly suits your space.</p>
     <div class="services-grid">
-      <a href="services/commercial.html" class="service-card reveal">
+      <a href="/services/commercial/" class="service-card reveal">
         <div class="service-icon">&#127970;</div>
         <h3>Commercial &amp; Office Spaces</h3>
         <p>German-engineered UV printing that transforms reception walls, boardrooms, and retail spaces with powerful, permanent brand imagery.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="services/residential.html" class="service-card reveal reveal-delay-1">
+      <a href="/services/residential/" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#127968;</div>
         <h3>Residential &amp; Interior Design</h3>
         <p>Bespoke architectural finishes for your home. Backed by carpentry expertise and interior design know-how for a flawless result.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="services/healthcare.html" class="service-card reveal reveal-delay-2">
+      <a href="/services/healthcare/" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#127973;</div>
         <h3>Healthcare &amp; Clinics</h3>
         <p>Seamless, hygienic, low-VOC wall art that calms patients and elevates your practice without compromising clinical standards.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="services/schools.html" class="service-card reveal">
+      <a href="/services/schools/" class="service-card reveal">
         <div class="service-icon">&#127891;</div>
         <h3>Schools &amp; Education</h3>
-        <p>Pick-proof, 100% child-safe murals that inspire learning — durable enough for classrooms and safe enough for nurseries.</p>
+        <p>Durable, vibrant murals that inspire learning — pick-resistant and low-VOC, safe enough for nurseries and classrooms.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="services/hospitality.html" class="service-card reveal reveal-delay-1">
+      <a href="/services/hospitality/" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#9749;</div>
         <h3>Hospitality, Cafes &amp; Retail</h3>
         <p>Create Instagram-worthy walls that drive organic word-of-mouth. Zero downtime — trade again the very next day.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="services/sports.html" class="service-card reveal reveal-delay-2">
+      <a href="/services/sports/" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#127942;</div>
         <h3>Sports &amp; Sponsorship</h3>
         <p>The Direct-to-Wall Sponsorship Model — premium, permanent sponsor placements that generate ongoing revenue for your club.</p>
@@ -298,7 +301,7 @@ PAGES["services.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip(),
-    "/services.html"
+    "/services/"
 )
 
 # ── services/commercial.html ───────────────────────────────────────────────
@@ -346,7 +349,7 @@ PAGES["services/commercial.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Ready to Upgrade Your Workspace?", "Print the <span class='gradient-text'>Impossible</span>", "Your business is unique, and your workspace should reflect that. From subtle, elegant designs to bold, floor-to-ceiling statements — let's discuss your brand's vision.", "Book Free Commercial Consultation"),
-    "/services/commercial.html"
+    "/services/commercial/"
 )
 
 # ── services/residential.html ──────────────────────────────────────────────
@@ -398,7 +401,7 @@ PAGES["services/residential.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Transform Your Home Today", "Print the <span class='gradient-text'>Impossible</span>", "Your home deserves better than off-the-shelf decor. Let's create a bespoke finish that is exclusively yours.", "Book Residential Design Consultation"),
-    "/services/residential.html"
+    "/services/residential/"
 )
 
 # ── services/healthcare.html ───────────────────────────────────────────────
@@ -446,7 +449,7 @@ PAGES["services/healthcare.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Upgrade Your Practice Environment", "Print the <span class='gradient-text'>Impossible</span>", "Elevate your clinic from a sterile room to a modern, welcoming practice without compromising your rigorous health standards. We print on plaster, glass partitions, doors, and brick.", "Book Clinical Site Consultation"),
-    "/services/healthcare.html"
+    "/services/healthcare/"
 )
 
 # ── services/schools.html ─────────────────────────────────────────────────
@@ -494,7 +497,7 @@ PAGES["services/schools.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Inspire Your Students", "Print the <span class='gradient-text'>Impossible</span>", "Whether you want to brighten a single classroom or completely rebrand your school's outdoor quadrangle, Wall Envy delivers vibrant, permanent results.", "Book Free School Site Consultation"),
-    "/services/schools.html"
+    "/services/schools/"
 )
 
 # ── services/hospitality.html ─────────────────────────────────────────────
@@ -542,7 +545,7 @@ PAGES["services/hospitality.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Ready to Transform Your Venue?", "Print the <span class='gradient-text'>Impossible</span>", "From subtle elegant designs to bold floor-to-ceiling statements — let's discuss your venue's vision.", "Book Free Venue Consultation"),
-    "/services/hospitality.html"
+    "/services/hospitality/"
 )
 
 # ── services/sports.html ──────────────────────────────────────────────────
@@ -594,7 +597,7 @@ PAGES["services/sports.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Maximise Your Wall Space", "Print the <span class='gradient-text'>Impossible</span>", "Stop settling for cheap banners. Upgrade your facility with permanent, impact-resistant graphics that reflect the pride of your club and the value of your sponsors.", "Book Free Facility Consultation"),
-    "/services/sports.html"
+    "/services/sports/"
 )
 
 # ── printing.html ─────────────────────────────────────────────────────────
@@ -634,19 +637,19 @@ PAGES["printing.html"] = page(
       </div>
     </div>
     <div class="services-grid">
-      <a href="services/commercial.html" class="service-card reveal">
+      <a href="/services/commercial/" class="service-card reveal">
         <div class="service-icon">&#127970;</div>
         <h3>Commercial &amp; Office Spaces</h3>
         <p>Walls, glass partitions, reception counters, and more.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="printing/embossed-relief.html" class="service-card reveal reveal-delay-1">
+      <a href="/printing/embossed-relief/" class="service-card reveal reveal-delay-1">
         <div class="service-icon">&#9632;&#65039;</div>
         <h3>Embossed &amp; Relief Printing</h3>
         <p>True 3D tactile textures built up with layers of UV-curable ink. You can actually feel the design.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
-      <a href="printing/vehicle-branding.html" class="service-card reveal reveal-delay-2">
+      <a href="/printing/vehicle-branding/" class="service-card reveal reveal-delay-2">
         <div class="service-icon">&#128663;</div>
         <h3>Vehicle Branding</h3>
         <p>Permanent, seamless branding directly onto vans, trucks, trailers — no vinyl, no peeling.</p>
@@ -655,7 +658,7 @@ PAGES["printing.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Have a Unique Surface?", "Print the <span class='gradient-text'>Impossible</span>", "From custom tabletops to giant event signage — if we can put it in front of the printer, we can bring your vision to life. Don't be afraid to ask!", "Book Free Surface Consultation"),
-    "/printing.html"
+    "/printing/"
 )
 
 # ── printing/embossed-relief.html ─────────────────────────────────────────
@@ -703,7 +706,7 @@ PAGES["printing/embossed-relief.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Ready to Add Physical Depth?", "Print the <span class='gradient-text'>Impossible</span>", "Combine colour, imagery, and physical dimension into a single seamless application. Let's discuss your tactile design ideas.", "Book Free Design Consultation"),
-    "/printing/embossed-relief.html"
+    "/printing/embossed-relief/"
 )
 
 # ── printing/vehicle-branding.html ────────────────────────────────────────
@@ -754,7 +757,7 @@ PAGES["printing/vehicle-branding.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Ready to Upgrade Your Fleet?", "Print the <span class='gradient-text'>Impossible</span>", "Let's discuss your vehicle branding requirements and book a free vehicle quote and measure.", "Book Free Vehicle Quote"),
-    "/printing/vehicle-branding.html"
+    "/printing/vehicle-branding/"
 )
 
 # ── how-it-works.html ─────────────────────────────────────────────────────
@@ -822,7 +825,7 @@ PAGES["how-it-works.html"] = page(
     </div>
   </div>
 </section>""" + cta_strip("Ready to Begin?", "Print the <span class='gradient-text'>Impossible</span>", "Whether you have a finished design or just a rough idea — we're here to help every step of the way. Book your free design consultation and quote today.", "Book Free Design Consultation"),
-    "/how-it-works.html"
+    "/how-it-works/"
 )
 
 # ── why-choose-us.html ────────────────────────────────────────────────────
@@ -873,7 +876,8 @@ PAGES["why-choose-us.html"] = page(
       </div>
     </div>
   </div>
-</section>""" + cta_strip("Convinced?", "Print the <span class='gradient-text'>Impossible</span>", "Let's discuss your specific material and space. Book a free site measure and surface consultation today.", "Book Free Site Measure")
+</section>""" + cta_strip("Convinced?", "Print the <span class='gradient-text'>Impossible</span>", "Let's discuss your specific material and space. Book a free site measure and surface consultation today.", "Book Free Site Measure"),
+    "/why-choose-us/"
 )
 
 # ── projects.html ─────────────────────────────────────────────────────────
@@ -981,12 +985,12 @@ PAGES["faqs.html"] = page(
       <div class="highlight-box reveal" style="margin-top:3rem;text-align:center;">
         <h4 style="margin-bottom:0.5rem;">Still have questions?</h4>
         <p style="margin-bottom:1.25rem;">We're happy to help. Reach out directly and we'll get back to you quickly.</p>
-        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="/contact/" class="btn btn-primary">Contact Us</a>
       </div>
     </div>
   </div>
 </section>""" + cta_strip(),
-    "/faqs.html"
+    "/faqs/"
 )
 
 # ── contact.html ──────────────────────────────────────────────────────────
@@ -1099,7 +1103,7 @@ PAGES["contact.html"] = page(
     </div>
   </div>
 </section>""",
-    "/contact.html"
+    "/contact/"
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────
@@ -1208,7 +1212,7 @@ PAGES["about.html"] = page(
 
   </div>
 </section>""" + cta_strip("Ready to Work With Us?", "Print the <span class='gradient-text'>Impossible</span>", "Book your free consultation today and let&rsquo;s talk about what we can create together.", "Book Free Consultation"),
-    "/about.html"
+    "/about/"
 )
 
 # ── 404.html ──────────────────────────────────────────────────────────────
@@ -1224,21 +1228,66 @@ PAGES["404.html"] = page(
     <p style="max-width:420px;margin:0 auto 2rem;">The page you're looking for doesn't exist, but we can definitely print something here. Let's get you back on track.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="/" class="btn btn-primary">Back to Home</a>
-      <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      <a href="/contact/" class="btn btn-outline">Contact Us</a>
     </div>
   </div>
 </section>""",
     "/404.html"
 )
 
+# ─── URL Slug Mapping ────────────────────────────────────────────────────────
+# Maps PAGES dict keys → directory slug for clean URL output.
+# None = write as-is (e.g. 404.html at root).
+
+_SLUGS = {
+    "services.html":                  "services",
+    "services/commercial.html":       "services/commercial",
+    "services/residential.html":      "services/residential",
+    "services/healthcare.html":       "services/healthcare",
+    "services/schools.html":          "services/schools",
+    "services/hospitality.html":      "services/hospitality",
+    "services/sports.html":           "services/sports",
+    "printing.html":                  "printing",
+    "printing/embossed-relief.html":  "printing/embossed-relief",
+    "printing/vehicle-branding.html": "printing/vehicle-branding",
+    "how-it-works.html":              "how-it-works",
+    "why-choose-us.html":             "why-choose-us",
+    "about.html":                     "about",
+    "projects.html":                  "projects",
+    "faqs.html":                      "faqs",
+    "contact.html":                   "contact",
+}
+
+_REDIR = ('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
+          '<meta http-equiv="refresh" content="0;url={url}">'
+          '<link rel="canonical" href="https://wallenvy.com.au{url}">'
+          '<title>Redirecting...</title></head>'
+          '<body><a href="{url}">Redirecting...</a></body></html>')
+
 # ─── Write all pages ─────────────────────────────────────────────────────────
 
 def write_page(rel_path, html):
-    full_path = os.path.join(ROOT, rel_path)
-    os.makedirs(os.path.dirname(full_path), exist_ok=True)
-    with open(full_path, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"  [ok] {rel_path}")
+    slug = _SLUGS.get(rel_path)
+    if slug:
+        # Write page to directory/index.html for clean URLs
+        dir_path = os.path.join(ROOT, slug)
+        os.makedirs(dir_path, exist_ok=True)
+        with open(os.path.join(dir_path, "index.html"), "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"  [ok] {slug}/")
+        # Write redirect at old .html path so bookmarks still work
+        old_path = os.path.join(ROOT, rel_path)
+        os.makedirs(os.path.dirname(old_path), exist_ok=True)
+        with open(old_path, "w", encoding="utf-8") as rf:
+            rf.write(_REDIR.format(url=f"/{slug}/"))
+        print(f"  [redir] {rel_path} → /{slug}/")
+    else:
+        # 404.html stays at root
+        full_path = os.path.join(ROOT, rel_path)
+        os.makedirs(os.path.dirname(full_path), exist_ok=True)
+        with open(full_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"  [ok] {rel_path}")
 
 if __name__ == "__main__":
     print("\n=== Wall Envy Page Builder ===\n")

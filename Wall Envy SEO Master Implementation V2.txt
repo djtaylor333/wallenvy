@@ -1,0 +1,389 @@
+Absolutely. I’d turn this into David’s page-by-page implementation worksheet, rather than another general SEO report.
+I’ve rechecked the pages Google is currently crawling, and there are some important differences in priority. In particular, the homepage is currently very light in crawlable descriptive content, while several service pages are already quite substantial. (Wall Envy)
+Wall Envy SEO Scorecard
+These scores are based on SEO readiness, not how attractive the page looks.
+Page
+Current
+Target
+Priority
+Main SEO target
+Homepage
+58/100
+95
+🔴 P0
+direct to wall printing Central Coast / Newcastle
+Services
+61/100
+90
+🔴 P0
+direct to wall printing services
+Commercial & Office
+82/100
+95
+🟠 P1
+commercial wall printing / office wall murals
+Hospitality
+83/100
+95
+🟠 P1
+cafe / restaurant wall murals
+Healthcare
+70/100
+90
+🔴 P0
+healthcare / clinic wall printing
+Schools
+75/100
+92
+🔴 P0
+school wall murals / education wall printing
+Sports & Sponsorship
+73/100
+94
+🔴 P0
+sports club / gym wall printing
+Residential
+79/100
+92
+🟠 P1
+custom residential wall murals
+Print Surfaces
+87/100
+96
+🟢 P2
+surfaces suitable for wall printing
+Printing hub
+68/100
+90
+🟠 P1
+direct-to-surface printing
+Embossed & Relief
+84/100
+94
+🟢 P2
+embossed / relief wall printing
+How It Works
+84/100
+94
+🟢 P2
+how direct-to-wall printing works
+FAQs
+78/100
+95
+🟠 P1
+wall printing questions
+About Us
+76/100
+90
+🟢 P2
+Wall Envy / Central Coast wall printing
+Projects
+~40/100
+95
+🔴 P0
+wall printing projects Central Coast/Newcastle
+Vehicle Printing
+Needs strategic review
+—
+🔴
+direct vehicle printing
+
+The last one is important: Google is already crawling a dedicated Vehicle Printing page making substantial claims about printing directly onto vans, trucks and trailers. (Wall Envy) I wouldn't SEO-push that page until you've confirmed that this is a service you actually want Wall Envy to sell and that the equipment/ink manufacturer supports the claims being made.
+
+David's exact page specifications
+1. HOMEPAGE — 🔴 First priority
+Current score: 58/100
+Google's crawl currently gets surprisingly little from the homepage: essentially “Wish your walls had your own custom design?”, some navigation-style copy and the Print the Impossible section. (Wall Envy)
+This is not strong enough for your most authoritative page.
+Primary keyword: Direct to wall printing Central Coast
+Secondary: Wall printing Newcastle, wall printing Hunter Region, custom wall murals
+Recommended URL: /
+SEO title:
+Direct to Wall Printing Central Coast & Newcastle | Wall Envy
+H1:
+Direct-to-Wall Printing Central Coast & Newcastle
+I'd actually favour that over the more creative H1 I suggested previously. Put the creativity underneath it.
+Hero subheading:
+Transform blank walls into extraordinary spaces with high-resolution artwork, murals and branding printed directly onto your walls.
+Then:
+Servicing the Central Coast, Newcastle and Hunter Region.
+Meta description:
+Transform your space with premium direct-to-wall printing across the Central Coast, Newcastle & Hunter. Custom murals, branding and artwork by Wall Envy.
+David needs to add
+Approximately 500–800 words of genuinely useful homepage content, but visually broken into sections so it doesn't feel text-heavy.
+The homepage should explain:
+What is direct-to-wall printing? → Who is it for? → What surfaces? → Industries → Why Wall Envy? → Projects → Service area → CTA.
+And yes: use the printing video as the hero background. That will not hurt SEO provided the H1 and explanatory copy remain real HTML text.
+
+2. SERVICES — 🔴
+Current score: 61/100
+This remains too thin compared with the pages underneath it. Google currently sees a relatively short introduction followed by your industry categories. (Wall Envy)
+Target keyword: Direct-to-wall printing services
+URL: /wall-printing-services
+SEO title:
+Direct-to-Wall Printing Services | Central Coast & Newcastle
+H1:
+Direct-to-Wall Printing Services
+Meta:
+Explore Wall Envy's direct-to-wall printing services for businesses, schools, hospitality, healthcare, sports and homes across Central Coast & Newcastle.
+Turn this into your pillar page.
+Every service should have 100–150 words plus an image and a contextual internal link.
+
+3. COMMERCIAL & OFFICE — 🟠
+Current: 82/100
+This is already a good page. It talks specifically about logos, corporate values, reception areas, boardrooms, retail, gyms and wayfinding. (Wall Envy)
+Don't rewrite it from scratch.
+Primary: commercial wall printing
+Secondary: office wall murals, office branding walls
+URL: /commercial-wall-printing
+SEO title:
+Commercial Wall Printing Central Coast & Newcastle | Wall Envy
+H1:
+Commercial & Office Wall Printing
+Meta:
+Transform offices and commercial spaces with direct-to-wall printing. Logos, branded walls and custom murals across Central Coast, Newcastle & Hunter.
+David should add
+A section called:
+Commercial Wall Printing Projects
+and eventually link actual jobs.
+Also change:
+Central Coast and Hunter regions
+to naturally include:
+Central Coast, Newcastle and Hunter Region
+in an appropriate early paragraph.
+
+4. HOSPITALITY, CAFES & RETAIL — 🟠
+Current: 83/100
+One of your strongest marketing pages already. (Wall Envy)
+Primary: cafe wall murals
+Secondary: restaurant wall murals, hospitality wall printing, retail wall graphics
+URL: /hospitality-wall-printing
+Title:
+Cafe & Restaurant Wall Murals | Central Coast & Newcastle
+H1:
+Wall Printing for Cafes, Restaurants & Retail
+Meta:
+Create memorable cafes, restaurants and retail spaces with custom direct-to-wall murals and branding across Central Coast, Newcastle & Hunter.
+Keep the Instagrammable wall positioning.
+Eventually create supporting content:
+How to Create an Instagrammable Cafe Feature Wall
+That's exactly the customer rather than SEO-bot angle we want.
+
+5. HEALTHCARE — 🔴
+Current: 70/100
+The SEO structure isn't the main problem. The claims are.
+Google currently sees claims including “nowhere for pathogens to hide”, “Medical-Grade Durability”, “zero off-gassing” and aggressive sanitisation resistance. (Wall Envy)
+Those need manufacturer substantiation.
+Primary: clinic wall murals
+Secondary: healthcare wall printing, dental clinic murals
+URL: /healthcare-wall-printing
+Title:
+Healthcare & Clinic Wall Printing | Wall Envy
+H1:
+Wall Printing for Healthcare & Clinics
+Meta:
+Create welcoming healthcare and clinic environments with custom wall printing for reception areas, treatment spaces and wayfinding.
+I'd reposition this page toward:
+patient experience + calming environments + branding + wayfinding + seamless finish
+rather than medical/infection-control claims.
+
+6. SCHOOLS & EDUCATION — 🔴
+Current: 75/100
+There's excellent topical material here: crests, house mascots, educational walls, libraries, childcare, corridors and outdoor areas. (Wall Envy)
+Primary: school wall murals
+Secondary: school wall printing, childcare murals
+URL: /school-wall-printing
+Title:
+School Wall Murals & Printing | Central Coast & Newcastle
+H1:
+Wall Printing for Schools & Education
+Meta:
+Transform schools, childcare centres and learning spaces with custom wall murals, school branding and educational graphics printed directly onto walls.
+Remove or substantiate:
+100% Child-Safe
+and similar absolutes. (Wall Envy)
+Otherwise this could become an excellent local landing page.
+
+7. SPORTS & SPONSORSHIP — 🔴
+Current: 73/100
+The concept is excellent.
+The URL is not.
+Google still has:
+/home/services/sports-sponshorships
+including the spelling mistake. (Wall Envy)
+New URL:
+/sports-wall-printing
+301 old → new.
+Primary: sports club wall printing
+Secondary: gym wall murals, sponsorship walls
+Title:
+Sports Club & Gym Wall Printing | Wall Envy
+H1:
+Wall Printing for Sports Clubs, Gyms & Sponsors
+Meta:
+Transform sports clubs and gyms with custom wall printing, team branding, sponsor walls, murals and logos across Central Coast & Newcastle.
+And keep developing the sponsorship revenue angle. That's a differentiator, not generic SEO copy. (Wall Envy)
+
+8. RESIDENTIAL — 🟠
+Current: 79/100
+There's plenty of relevant content already. (Wall Envy)
+Primary: custom wall murals
+Secondary: residential wall printing, feature wall printing
+URL: /residential-wall-printing
+Title:
+Custom Wall Murals & Residential Wall Printing | Wall Envy
+H1:
+Custom Wall Printing for Homes & Interiors
+Meta:
+Create bespoke feature walls with custom direct-to-wall printing for homes and interiors across Central Coast, Newcastle and the Hunter.
+Again, verify claims such as “completely non-toxic” and “100% safe” against the actual ink documentation before publishing them as facts. (Wall Envy)
+
+9. PRINT SURFACES — 🟢
+Current: 87/100
+This might ultimately be one of your strongest organic-search pages.
+Google already understands individual sections for brick, concrete, plasterboard/render, glass, acrylic, timber, plywood, metal, corrugated iron and fibre cement. (Wall Envy)
+URL:
+/wall-printing-surfaces
+Title:
+What Surfaces Can a Wall Printer Print On? | Wall Envy
+H1:
+Surfaces & Materials We Can Print On
+This page should eventually answer individual Google searches.
+For example:
+Can you print directly onto brick?
+Can you print onto concrete?
+Can you wall print onto glass?
+Can you print onto timber?
+Can you print on corrugated metal?
+That's better than creating five thin articles.
+
+10. HOW IT WORKS — 🟢
+Current: 84/100
+This page is good.
+Google is finding the four-step process: consultation, preparation, printing and final reveal. (Wall Envy)
+Primary: how does wall printing work
+URL: /how-wall-printing-works
+Title:
+How Does Direct-to-Wall Printing Work? | Wall Envy
+H1:
+How Direct-to-Wall Printing Works
+Meta:
+Discover how direct-to-wall printing works, from design and surface preparation to high-definition UV printing and the finished wall.
+Add an embedded video of the printer operating here too.
+This is where video would be fantastic.
+
+11. FAQs — 🟠
+Current: 78/100
+There are already useful questions covering cost, surfaces, lifespan, design, removal and scheduling. (Wall Envy)
+URL: /wall-printing-faq
+Title:
+Wall Printing FAQs | Cost, Surfaces, Durability & Process
+H1:
+Direct-to-Wall Printing FAQs
+Add questions targeting commercial-intent searches:
+How much does direct-to-wall printing cost?
+Wall printing vs wallpaper — which is better?
+Wall printing vs vinyl graphics?
+Can you print a company logo directly onto a wall?
+Can you print on brick?
+Can wall printing be removed?
+How close can the printer print to edges and corners?
+How much space does the printer need?
+Also fix the Australian terminology. Google currently sees “Sheetrock (drywall)”. (Wall Envy)
+For an Australian company I'd lead with:
+plasterboard / Gyprock
+
+12. ABOUT — 🟢
+Current: 76/100
+The existing family-business story is useful and establishes Wall Envy as Central Coast based. (Wall Envy)
+URL: /about-wall-envy
+Title:
+About Wall Envy | Central Coast Wall Printing
+H1:
+About Wall Envy
+Keep the family story.
+Add:
+real team photo
+actual wall printer photo
+actual installation photos
+areas serviced
+trade/design expertise
+That helps establish that this is a genuine local operation rather than a generic lead-generation website.
+
+13. PROJECTS — 🔴 Huge opportunity
+This is where I'd spend serious effort.
+Target score: 95/100.
+URL: /wall-printing-projects
+Title:
+Wall Printing Projects | Central Coast & Newcastle
+H1:
+Direct-to-Wall Printing Projects
+But the critical change is:
+Stop treating Projects as just a gallery.
+Every real completed project should have:
+Project name
+Location
+Client/business type
+Challenge
+Design concept
+Surface
+Wall-printing solution
+Finished result
+Multiple original photographs
+Link to corresponding service
+Quote CTA
+Then create individual URLs such as:
+/projects/cafe-wall-mural-long-jetty
+or
+/projects/office-wall-printing-tuggerah
+when those are genuine completed jobs.
+That's how we start accumulating local authority.
+
+The two NEW pages I want
+After those changes, David should build:
+Direct-to-Wall Printing Central Coast
+/wall-printing-central-coast
+and:
+Direct-to-Wall Printing Newcastle & Hunter
+/wall-printing-newcastle
+These must be real location landing pages, not identical SEO doorway pages.
+Each needs local projects, service-area information, different copy, customer examples, imagery and FAQs.
+
+Sitewide internal-link structure
+This is the architecture I'd give David:
+HOME
+→ SERVICES
+→ Commercial
+→ Hospitality
+→ Healthcare
+→ Schools
+→ Sports
+→ Residential
+Then every service page links naturally to:
+How It Works
+Print Surfaces
+Relevant Project
+Relevant FAQ
+Get Quote
+And projects link back to the service page and location page.
+That creates clusters rather than isolated pages.
+
+David's first implementation sprint
+I'd make this Sprint 1 and not let other SEO work distract from it:
+1. Homepage — title, H1, meta, crawlable copy and Newcastle targeting.
+2. URL map — decide every final URL before changing anything.
+3. 301 redirects — especially the misspelled Sports URL.
+4. Projects — convert from gallery into SEO/project architecture.
+5. Services — turn into a genuine pillar page.
+6. Healthcare/Schools/Residential — remove or substantiate absolute product/safety claims.
+7. Geographic language — consistently establish Central Coast + Newcastle + Hunter.
+8. Images — filenames, ALT text, dimensions and compression.
+9. Internal links — build the structure above.
+10. Search Console — submit/reinspect changed URLs and then monitor queries/impressions rather than judging success by manually Googling Wall Envy.
+Only after that sprint would I have him start the blog/content program.
+And the first three articles I'd commission would be:
+Wall Printing vs Wallpaper: Which Is Better?
+Direct-to-Wall Printing vs Vinyl Wall Graphics
+How Much Does Direct-to-Wall Printing Cost in Australia?
+Those are much closer to buying decisions than publishing generic “10 Amazing Wall Mural Ideas” articles.
+The next thing I recommend is that I add this scorecard and exact page specifications into David's existing SEO Master Google Doc, including a checkbox implementation table for every URL, SEO title, H1, meta description, primary keyword, redirects and status. That way we don't create yet another SEO document—his existing master becomes the live implementation tracker.
