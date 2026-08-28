@@ -281,14 +281,12 @@ Wall Printing FAQs | Cost, Surfaces, Durability & Process
 H1:
 Direct-to-Wall Printing FAQs
 Add questions targeting commercial-intent searches:
-How much does direct-to-wall printing cost?
 Wall printing vs wallpaper — which is better?
 Wall printing vs vinyl graphics?
 Can you print a company logo directly onto a wall?
 Can you print on brick?
 Can wall printing be removed?
-How close can the printer print to edges and corners?
-How much space does the printer need?
+
 Also fix the Australian terminology. Google currently sees “Sheetrock (drywall)”. (Wall Envy)
 For an Australian company I'd lead with:
 plasterboard / Gyprock
@@ -303,7 +301,6 @@ H1:
 About Wall Envy
 Keep the family story.
 Add:
-real team photo
 actual wall printer photo
 actual installation photos
 areas serviced
