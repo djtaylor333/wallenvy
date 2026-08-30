@@ -384,7 +384,7 @@ p  { color: var(--text2); }
   padding: 0 clamp(16px, 5vw, 48px);
 }
 .hero-home .hero-logo-img {
-  max-width: 120px;
+  max-width: 340px;
   margin: 0 0 1.25rem;
 }
 .hero-home .tagline {
