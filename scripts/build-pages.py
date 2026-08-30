@@ -748,7 +748,7 @@ PAGES["printing/vehicle-branding.html"] = page(
       <div class="perfect-for-grid">
         <div class="perfect-for-item reveal"><div class="pf-dot"></div><p>Tradie Vans &amp; Utes — clean, professional branding for plumbers, electricians, builders, and landscapers</p></div>
         <div class="perfect-for-item reveal reveal-delay-1"><div class="pf-dot"></div><p>Food Trucks &amp; Coffee Trailers — vibrant, high-resolution graphics that withstand heat and humidity</p></div>
-        <div class="perfect-for-item reveal reveal-delay-2"><div class="pf-dot"></div><p>Corporate Box Trucks &amp; Delivery Fleets — large-scale edge-to-edge advertising on massive blank panels</p></div>
+        <div class="perfect-for-item reveal reveal-delay-2"><div class="pf-dot"></div><p>Corporate Box Trucks &amp; Delivery Fleets — large-scale image with no panel joins or overlaps — like a hand-painted mural. advertising on massive blank panels</p></div>
         <div class="perfect-for-item reveal reveal-delay-3"><div class="pf-dot"></div><p>Enclosed Toy Haulers &amp; Motorsport Trailers — custom graphics and sponsor logos that won't tear from highway debris</p></div>
       </div>
     </div>
@@ -843,7 +843,7 @@ PAGES["why-choose-us.html"] = page(
         <div class="comparison-header"><div class="ci-num">1</div><h3>100% Seamless Finish</h3></div>
         <div class="comparison-body">
           <div class="ci-problem"><strong>The Problem</strong>Large format vinyl and wallpaper are applied in panels. No matter how skilled the installer, there are always visible seams that disrupt the image and accumulate dust over time.</div>
-          <div class="ci-advantage"><strong>The Wall Envy Advantage</strong>Our technology prints directly onto the wall as one continuous, edge-to-edge image. No seams, no overlaps — just a flawless, uninterrupted masterpiece that looks like a luxury hand-painted mural.</div>
+          <div class="ci-advantage"><strong>The Wall Envy Advantage</strong>Our technology prints directly onto the wall as one continuous, image with no panel joins or overlaps — like a hand-painted mural. image. No seams, no overlaps — just a flawless, uninterrupted masterpiece that looks like a luxury hand-painted mural.</div>
         </div>
       </div>
       <div class="comparison-item reveal reveal-delay-1">

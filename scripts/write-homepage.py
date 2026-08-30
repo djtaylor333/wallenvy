@@ -268,7 +268,7 @@ HOMEPAGE = """\
             <div class="feature-icon">&#10003;</div>
             <div>
               <h4>100% Seamless Finish</h4>
-              <p>One continuous, edge-to-edge image. No panel joins, no overlaps &mdash; like a luxury hand-painted mural.</p>
+              <p>One continuous, image with no panel joins or overlaps — like a hand-painted mural. image. No panel joins, no overlaps &mdash; like a luxury hand-painted mural.</p>
             </div>
           </div>
           <div class="feature-item">
