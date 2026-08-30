@@ -357,15 +357,43 @@ p  { color: var(--text2); }
 /* =====================================================
    Hero — Home Page (Light & Editorial)
    ===================================================== */
-.hero-home {
-  min-height: calc(100vh - var(--nav-h));
-  display: block;
-  position: relative;
-  overflow: hidden;
+.hero-home { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 6rem 2rem;
   background: var(--bg-midnight);
-  padding-top: calc(var(--nav-h) + 2rem);
-  padding-bottom: 3.5rem;
 }
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1930px;
+  width: 100%;
+}
+
+.hero-content {
+  flex: 1 1 560px;
+  text-align: center;
+}
+
+.hero-media {
+  flex: 0 0 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .hero-home::before {
   content: '';
   position: absolute;
