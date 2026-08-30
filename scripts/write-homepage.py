@@ -19,7 +19,7 @@ HOMEPAGE = """\
   <!-- Open Graph -->
   <meta property="og:title" content="Direct to Wall Printing Central Coast &amp; Newcastle | Wall Envy">
   <meta property="og:description" content="Transform walls into extraordinary spaces with premium direct-to-wall printing across the Central Coast, Newcastle &amp; Hunter. Custom murals, branding and artwork.">
-  <meta property="og:image" content="https://wallenvy.com.au/assets/images/logo-banner.png">
+  <meta property="og:image" content="https://wallenvy.com.au/assets/images/logo-text.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://wallenvy.com.au/">
   <meta property="og:site_name" content="Wall Envy">
@@ -27,7 +27,7 @@ HOMEPAGE = """\
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Direct to Wall Printing Central Coast &amp; Newcastle | Wall Envy">
   <meta name="twitter:description" content="Premium direct-to-wall printing across the Central Coast, Newcastle &amp; Hunter. Commercial and residential.">
-  <meta name="twitter:image" content="https://wallenvy.com.au/assets/images/logo-banner.png">
+  <meta name="twitter:image" content="https://wallenvy.com.au/assets/images/logo-text.png">
   <!-- JSON-LD LocalBusiness Schema -->
   <script type="application/ld+json">
   {
@@ -39,8 +39,8 @@ HOMEPAGE = """\
     "url": "https://wallenvy.com.au",
     "telephone": "+61414698448",
     "email": "info@wallenvy.com.au",
-    "logo": "https://wallenvy.com.au/assets/images/logo-banner.png",
-    "image": "https://wallenvy.com.au/assets/images/logo-banner.png",
+    "logo": "https://wallenvy.com.au/assets/images/logo-text.png",
+    "image": "https://wallenvy.com.au/assets/images/logo-text.png",
     "priceRange": "$$",
     "areaServed": [
       {"@type": "City", "name": "Central Coast NSW"},
@@ -155,48 +155,15 @@ HOMEPAGE = """\
   </div>
 </section>
 
-<!-- ===== STATS STRIP ===== -->
-<section class="section-sm" style="background:var(--bg2); border-bottom:1px solid var(--border);">
-  <div class="container">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; text-align:center;">
-      <div class="reveal">
-        <div style="font-size:2.2rem;font-family:'Playfair Display',serif;font-style:italic;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;">12+</div>
-        <p style="font-size:0.875rem;color:var(--text2);margin:0;">Years Indoor Print Lifespan</p>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div style="font-size:2.2rem;font-family:'Playfair Display',serif;font-style:italic;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;">Any</div>
-        <p style="font-size:0.875rem;color:var(--text2);margin:0;">Surface &mdash; Brick, Glass, Metal, Timber</p>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <div style="font-size:2.2rem;font-family:'Playfair Display',serif;font-style:italic;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;">Zero</div>
-        <p style="font-size:0.875rem;color:var(--text2);margin:0;">Peeling &middot; Seams &middot; Chemical Odour</p>
-      </div>
-      <div class="reveal reveal-delay-3">
-        <div style="font-size:2.2rem;font-family:'Playfair Display',serif;font-style:italic;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;">Free</div>
-        <p style="font-size:0.875rem;color:var(--text2);margin:0;">Consultation &amp; Site Measure</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== WHAT IS DIRECT-TO-WALL PRINTING (SEO Content) ===== -->
-<section class="section" id="about-service" style="background:var(--bg);">
+<section class="section home-intro" id="about-service" style="background:var(--bg);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+    <div style="max-width:760px;margin:0 auto;">
       <div class="reveal">
         <span class="section-label">What We Do</span>
         <h2 style="margin-bottom:1.25rem;">Custom Wall Printing <span class="gradient-text">Without Wallpaper or Vinyl</span></h2>
         <p style="font-size:1.05rem;margin-bottom:1.25rem;">Direct-to-wall printing is an advanced technology that prints high-resolution artwork, murals, and branding <strong>directly onto your wall surface</strong> using UV-cured eco-friendly inks. Unlike wallpaper or vinyl, there are no seams, no adhesives, and no peeling edges &mdash; the result is a seamless, permanent finish that becomes part of the wall itself.</p>
-        <p style="margin-bottom:1.25rem;">Our German-engineered vertical printer travels up to 4 metres tall and can print on virtually any flat surface &mdash; plasterboard (Gyprock), brick, concrete, glass, timber, metal, and more. The ink cures instantly under UV light, so there&rsquo;s no wait time, no chemical odour, and no downtime for your home or business.</p>
-        <p style="margin-bottom:2rem;">Wall Envy is a proudly family-owned business based on the Central Coast, serving the Central Coast, Newcastle, Lake Macquarie and the broader Hunter Region. We bring together carpentry expertise, interior design sensibility, and cutting-edge printing technology to deliver truly extraordinary results.</p>
-        <a href="/how-it-works/" class="btn btn-primary">See How It Works</a>
-      </div>
-      <div class="reveal reveal-delay-2" style="position:relative;">
-        <img src="/assets/images/projects/proj-02.jpg" alt="Direct-to-wall printing example by Wall Envy"
-             style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-lg);">
-        <div style="position:absolute;bottom:1rem;left:1rem;right:1rem;background:var(--footer-bg);border-radius:10px;padding:1rem;box-shadow:var(--sh-md);">
-          <p style="font-size:0.8rem;color:rgba(255,255,255,0.9);font-weight:600;margin:0;">&#9889; UV-cured ink bonds directly to brick, glass, concrete &amp; more</p>
-        </div>
+        <p style="margin-bottom:0;">Wall Envy specialises in direct-to-wall printing for businesses, schools, cafes, restaurants, offices, healthcare spaces, sporting facilities and homes across the Central Coast, Newcastle and Hunter Region. Instead of applying wallpaper or adhesive vinyl, our technology prints artwork, graphics, photography and branding directly onto suitable wall surfaces. From a company logo behind reception to a large-scale cafe mural or completely custom feature wall, every print can be designed specifically for the space.</p>
       </div>
     </div>
   </div>
@@ -205,13 +172,8 @@ HOMEPAGE = """\
 <div class="divider"></div>
 
 <!-- ===== SERVICES ===== -->
-<section class="section" id="services" style="background:var(--bg2);">
+<section class="section home-service-cards" id="services" style="background:var(--bg2);padding-top:2rem;">
   <div class="container">
-    <div class="text-center" style="margin-bottom:3rem;">
-      <span class="section-label reveal">Industries We Serve</span>
-      <h2 class="reveal reveal-delay-1">We Print <span class="gradient-text">Anywhere</span></h2>
-      <p class="reveal reveal-delay-2" style="max-width:600px;margin:0.75rem auto 0;">From boardrooms to bedrooms, hospitals to gymnasiums &mdash; if it has a surface, we can make it extraordinary across the Central Coast, Newcastle and Hunter Region.</p>
-    </div>
     <div class="services-grid">
       <a href="/services/commercial/" class="service-card reveal">
         <div class="service-icon">&#127970;</div>

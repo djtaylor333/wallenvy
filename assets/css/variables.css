@@ -47,7 +47,7 @@
   --yellow: var(--gold-light);
 
   --grad-brand: var(--brand-gradient);
-  --grad-text: var(--cta-primary-gradient);
+  --grad-text: var(--gold-primary);
   --grad-hero: var(--brand-gradient);
   --grad-cta: var(--brand-gradient);
 

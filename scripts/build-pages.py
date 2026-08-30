@@ -15,7 +15,7 @@ BASE_HREF = '/'
 
 # SEO
 CANONICAL_BASE  = "https://wallenvy.com.au"
-OG_IMAGE        = "https://wallenvy.com.au/assets/images/logo-banner.png"
+OG_IMAGE        = "https://wallenvy.com.au/assets/images/logo-text.png"
 
 SCHEMA_LD = """<script type="application/ld+json">
 {
@@ -27,8 +27,8 @@ SCHEMA_LD = """<script type="application/ld+json">
   "url": "https://wallenvy.com.au",
   "telephone": "+61414698448",
   "email": "info@wallenvy.com.au",
-  "logo": "https://wallenvy.com.au/assets/images/logo-banner.png",
-  "image": "https://wallenvy.com.au/assets/images/logo-banner.png",
+  "logo": "https://wallenvy.com.au/assets/images/logo-text.png",
+  "image": "https://wallenvy.com.au/assets/images/logo-text.png",
   "priceRange": "$$",
   "areaServed": [
     {"@type": "City", "name": "Central Coast NSW"},
