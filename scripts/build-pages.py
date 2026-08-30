@@ -182,7 +182,7 @@ FOOTER = """
 </div>
 """
 
-THEME_SCRIPT = """<script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t='light';document.documentElement.setAttribute('data-theme',t);})();</script>"""
+THEME_SCRIPT = """<script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t='dark';document.documentElement.setAttribute('data-theme',t);})();</script>"""
 
 def page(title, desc, content, page_path=""):
     canonical = f"{CANONICAL_BASE}{page_path}" if page_path else CANONICAL_BASE + "/"

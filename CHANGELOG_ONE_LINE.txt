@@ -1,0 +1,1 @@
+Switched Wall Envy to a midnight navy/gold/purple design system, rebuilt the homepage hero to match the approved concept artwork, and applied variable-driven styling updates across shared components and templates.

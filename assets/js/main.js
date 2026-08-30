@@ -13,7 +13,7 @@
   function getPreferredTheme() {
     const stored = localStorage.getItem(THEME_KEY);
     if (stored) return stored;
-    return 'light'; // Default to light mode — dark only by manual toggle
+    return 'dark'; // Default to midnight theme
   }
 
   function applyTheme(theme) {

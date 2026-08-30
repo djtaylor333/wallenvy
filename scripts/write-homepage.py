@@ -58,7 +58,7 @@ HOMEPAGE = """\
   <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
   <base href="/">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t='light';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <script>(function(){var t=localStorage.getItem('wallenvy_theme');if(!t)t='dark';document.documentElement.setAttribute('data-theme',t);})();</script>
 </head>
 <body>
 
@@ -133,29 +133,26 @@ HOMEPAGE = """\
 
 <!-- ===== HERO ===== -->
 <section class="hero-home">
-  <img src="/assets/images/hero-wall.jpg" alt="Wall Envy direct-to-wall printing" class="hero-bg-img">
-  <!-- Paint splash decoration -->
-  <img src="/assets/images/logo-splash.png" alt="" aria-hidden="true"
-       style="position:absolute;left:-4%;bottom:-5%;width:55%;max-width:700px;opacity:0.1;pointer-events:none;filter:saturate(0.8);z-index:1;">
   <div class="hero-inner">
-    <span class="section-label">Central Coast &amp; Hunter Regions &middot; NSW Australia</span>
-    <!-- Visual brand wordmark (aria-hidden for SEO) -->
-    <div class="gradient-text" aria-hidden="true"
-         style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(3rem,8vw,7rem);font-weight:800;line-height:1;margin-bottom:0.5rem;">
-      Wall Envy
+    <div class="hero-copy">
+      <img src="/assets/images/logo-text.png" alt="Wall Envy logo" class="hero-logo-img">
+      <span class="section-label">Central Coast &amp; Hunter Regions &middot; NSW Australia</span>
+      <div class="hero-wordmark" aria-hidden="true">Wall Envy</div>
+      <h1>Direct-to-Wall Printing &amp; Custom Wall Murals</h1>
+      <p class="tagline">YOUR DESIGN &nbsp;&middot;&nbsp; YOUR WALL &nbsp;&middot;&nbsp; PRINT THE IMPOSSIBLE</p>
+      <p class="hero-sub">Custom wall printing for businesses, schools, cafes, offices and homes across the Central Coast, Newcastle and Hunter Region. We print high-definition artwork directly onto suitable wall surfaces with no wallpaper seams and no peeling vinyl edges.</p>
+      <div class="hero-ctas">
+        <a href="/how-it-works/" class="btn btn-primary btn-lg">How Direct-to-Wall Printing Works &#8594;</a>
+      </div>
+      <div class="hero-ctas hero-ctas-secondary">
+        <a href="/services/" class="btn btn-outline btn-lg">Explore Services</a>
+        <a href="/contact/" class="btn btn-outline btn-lg">Book Free Consultation</a>
+      </div>
     </div>
-    <!-- SEO H1 -->
-    <h1 style="font-size:clamp(1rem,2.2vw,1.45rem);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--text2);margin-bottom:1.5rem;font-style:normal;font-family:var(--font-body,'Plus Jakarta Sans',sans-serif);">
-      Direct-to-Wall Printing &mdash; Central Coast &amp; Newcastle
-    </h1>
-    <p class="tagline">ANY DESIGN &nbsp;&middot;&nbsp; ANY SURFACE &nbsp;&middot;&nbsp; PRINT THE IMPOSSIBLE</p>
-    <p class="hero-sub">Transform your blank walls into breathtaking, permanent masterpieces. We print high-definition custom artwork directly onto any surface &mdash; no peeling, no seams, no limits.</p>
-    <div class="hero-ctas">
-      <a href="/services/" class="btn btn-primary btn-lg">Explore Services</a>
-      <a href="/contact/" class="btn btn-outline btn-lg">Book Free Consultation</a>
+    <div class="hero-art-wrap" aria-hidden="true">
+      <img src="/assets/images/Concept wall mural and machine.png" alt="" class="hero-feature-art">
     </div>
   </div>
-  <div class="hero-scroll-hint">scroll</div>
 </section>
 
 <!-- ===== STATS STRIP ===== -->
@@ -188,7 +185,7 @@ HOMEPAGE = """\
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
       <div class="reveal">
         <span class="section-label">What We Do</span>
-        <h2 style="margin-bottom:1.25rem;">What is <span class="gradient-text">Direct-to-Wall Printing?</span></h2>
+        <h2 style="margin-bottom:1.25rem;">Custom Wall Printing <span class="gradient-text">Without Wallpaper or Vinyl</span></h2>
         <p style="font-size:1.05rem;margin-bottom:1.25rem;">Direct-to-wall printing is an advanced technology that prints high-resolution artwork, murals, and branding <strong>directly onto your wall surface</strong> using UV-cured eco-friendly inks. Unlike wallpaper or vinyl, there are no seams, no adhesives, and no peeling edges &mdash; the result is a seamless, permanent finish that becomes part of the wall itself.</p>
         <p style="margin-bottom:1.25rem;">Our German-engineered vertical printer travels up to 4 metres tall and can print on virtually any flat surface &mdash; plasterboard (Gyprock), brick, concrete, glass, timber, metal, and more. The ink cures instantly under UV light, so there&rsquo;s no wait time, no chemical odour, and no downtime for your home or business.</p>
         <p style="margin-bottom:2rem;">Wall Envy is a proudly family-owned business based on the Central Coast, serving the Central Coast, Newcastle, Lake Macquarie and the broader Hunter Region. We bring together carpentry expertise, interior design sensibility, and cutting-edge printing technology to deliver truly extraordinary results.</p>

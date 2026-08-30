@@ -1,0 +1,72 @@
+/* Wall Envy color system: 80/15/5 navy/text/accent */
+:root {
+  --bg-midnight: #061525;
+  --bg-deep: #0B1D2D;
+  --card: #13283A;
+  --gold-primary: #D89A2B;
+  --gold-light: #E8B94F;
+  --gold-deep: #A96F19;
+  --purple: #4B1D68;
+  --purple-highlight: #702B87;
+  --text-primary: #F5F3EE;
+  --text-secondary: #AAB4B9;
+  --divider: #304354;
+
+  --brand-gradient: linear-gradient(135deg, #061525 0%, #0B1D2D 55%, #4B1D68 100%);
+  --cta-primary-gradient: linear-gradient(90deg, #A96F19 0%, #D89A2B 50%, #E8B94F 100%);
+
+  /* Existing token compatibility */
+  --bg: var(--bg-midnight);
+  --bg2: var(--bg-deep);
+  --bg3: #102235;
+  --card-hover: #193246;
+  --text: var(--text-primary);
+  --text2: var(--text-secondary);
+  --text3: #7f919f;
+
+  --border: var(--divider);
+  --glass: rgba(11, 29, 45, 0.72);
+  --glass-border: rgba(170, 180, 185, 0.28);
+
+  --nav-bg: rgba(6, 21, 37, 0.94);
+  --footer-bg: var(--bg-deep);
+  --input-bg: #10263a;
+
+  --teal: var(--gold-primary);
+  --teal-dark: var(--gold-deep);
+  --teal-light: var(--gold-light);
+  --timber: var(--gold-primary);
+  --timber-light: var(--gold-light);
+  --sand: var(--text-primary);
+  --gold: var(--gold-primary);
+
+  --cyan: var(--gold-primary);
+  --magenta: var(--purple-highlight);
+  --orange: var(--gold-light);
+  --blue: #355877;
+  --yellow: var(--gold-light);
+
+  --grad-brand: var(--brand-gradient);
+  --grad-text: var(--cta-primary-gradient);
+  --grad-hero: var(--brand-gradient);
+  --grad-cta: var(--brand-gradient);
+
+  --nav-h: 78px;
+  --max-w: 1200px;
+  --section-py: clamp(60px, 8vw, 120px);
+  --card-r: 14px;
+  --btn-r: 50px;
+
+  --sh-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
+  --sh-md: 0 8px 30px rgba(0, 0, 0, 0.34);
+  --sh-lg: 0 14px 54px rgba(0, 0, 0, 0.45);
+  --sh-glow-c: 0 0 32px rgba(216, 154, 43, 0.2);
+  --sh-glow-m: 0 0 40px rgba(112, 43, 135, 0.25);
+
+  --t: 0.28s cubic-bezier(.4, 0, .2, 1);
+}
+
+[data-theme="dark"],
+[data-theme="light"] {
+  color-scheme: dark;
+}
