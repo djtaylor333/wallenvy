@@ -95,6 +95,7 @@ HOMEPAGE = """\
         <li><a href="/why-choose-us/" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
         <li><a href="/projects/" class="nav-link" data-path="/projects">Projects</a></li>
         <li><a href="/faqs/" class="nav-link" data-path="/faqs">FAQs</a></li>
+        <li><a href="/blog/" class="nav-link" data-path="/blog">Blog</a></li>
         <li><a href="/contact/" class="nav-link" data-path="/contact" style="color:var(--teal);font-weight:600;">Contact</a></li>
       </ul>
       <button class="theme-toggle" aria-label="Toggle theme">
@@ -128,6 +129,7 @@ HOMEPAGE = """\
   <a href="/about/">About Us</a>
   <a href="/projects/">Projects</a>
   <a href="/faqs/">FAQs</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/" style="color:var(--teal);font-weight:700;">Contact Us</a>
 </div>
 

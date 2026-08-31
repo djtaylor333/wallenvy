@@ -78,6 +78,7 @@ NAV = """
         <li><a href="/why-choose-us/" class="nav-link" data-path="/why-choose-us">Why Choose Us</a></li>
         <li><a href="/projects/" class="nav-link" data-path="/projects">Projects</a></li>
         <li><a href="/faqs/" class="nav-link" data-path="/faqs">FAQs</a></li>
+        <li><a href="/blog/" class="nav-link" data-path="/blog">Blog</a></li>
         <li><a href="/contact/" class="nav-link" data-path="/contact" style="color:var(--teal);font-weight:600;">Contact</a></li>
       </ul>
       <button class="theme-toggle" aria-label="Toggle theme">
@@ -111,6 +112,7 @@ NAV = """
   <a href="/about/">About Us</a>
   <a href="/projects/">Projects</a>
   <a href="/faqs/">FAQs</a>
+  <a href="/blog/">Blog</a>
   <a href="/contact/" style="color:var(--teal);font-weight:700;">Contact Us</a>
 </div>
 """
@@ -1215,6 +1217,102 @@ PAGES["about.html"] = page(
     "/about/"
 )
 
+# ── blog.html ────────────────────────────────────────────────────────────
+
+PAGES["blog.html"] = page(
+    "Wall Envy Blog",
+    "Insights, comparisons, and practical guides about direct-to-wall printing for Central Coast and Newcastle projects.",
+    inner_hero("Blog", 'Wall Envy <span class="gradient-text">Insights</span>', "Helpful articles about murals, materials, and decisions for your next wall project.") + """
+<section class="section page-content" style="padding-top:3rem;">
+  <div class="container">
+    <div id="blog-post-list" class="blog-list">
+      <article class="blog-card" data-post-date="2026-08-31">
+        <div class="blog-card-date">Mon Aug 31 2026</div>
+        <h3>Direct-to-Wall Printing vs Wallpaper</h3>
+        <p>Comparing durability, install speed, finish quality, and long-term maintenance for homes and commercial interiors.</p>
+        <a href="/blog/direct-to-wall-printing-vs-wallpaper/" class="blog-read-more">Read More &#8594;</a>
+      </article>
+
+      <article class="blog-card" data-post-date="2026-09-03">
+        <div class="blog-card-date">Thu Sep 3 2026</div>
+        <h3>Direct-to-Wall Printing vs Vinyl Graphics</h3>
+        <p>A practical look at edge lifting, moisture resistance, and where vinyl still works best versus direct UV wall printing.</p>
+        <a href="/blog/direct-to-wall-printing-vs-vinyl/" class="blog-read-more">Read More &#8594;</a>
+      </article>
+    </div>
+
+    <h3 class="blog-more-soon">More Coming Soon</h3>
+  </div>
+</section>
+
+<script>
+(function () {
+  const list = document.getElementById('blog-post-list');
+  if (!list) return;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const cards = Array.from(list.querySelectorAll('.blog-card'));
+  const published = cards.filter(card => {
+    const raw = card.getAttribute('data-post-date');
+    if (!raw) return false;
+    const d = new Date(raw + 'T00:00:00');
+    return !Number.isNaN(d.getTime()) && d <= today;
+  });
+
+  published.sort((a, b) => {
+    const da = new Date(a.getAttribute('data-post-date') + 'T00:00:00').getTime();
+    const db = new Date(b.getAttribute('data-post-date') + 'T00:00:00').getTime();
+    return db - da;
+  });
+
+  list.innerHTML = '';
+  published.forEach(card => list.appendChild(card));
+})();
+</script>
+""",
+    "/blog/"
+)
+
+# ── blog/direct-to-wall-printing-vs-wallpaper.html ───────────────────────
+
+PAGES["blog/direct-to-wall-printing-vs-wallpaper.html"] = page(
+    "Direct-to-Wall Printing vs Wallpaper",
+    "Placeholder article comparing direct-to-wall printing and wallpaper across durability, look, and installation.",
+    inner_hero("Blog", "Direct-to-Wall Printing vs Wallpaper", "Posted Mon Aug 31 2026") + """
+<section class="section page-content" style="padding-top:3rem;">
+  <div class="container" style="max-width:900px;">
+    <img src="/assets/images/faq-banner.jpg" alt="Placeholder blog visual" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-md);margin-bottom:2rem;">
+    <p style="font-size:1.05rem; margin-bottom:1.25rem;">Placeholder intro: This article compares direct-to-wall printing and wallpaper for appearance, longevity, and total project cost so you can choose the right finish for your space.</p>
+    <p style="margin-bottom:1.25rem;">Placeholder content block 1: Add your real project examples, before/after photos, and practical recommendations here.</p>
+    <p style="margin-bottom:2rem;">Placeholder content block 2: Expand this with your process notes, material limitations, and expected timelines for both options.</p>
+    <a href="/blog/" class="btn btn-outline">&larr; Back to Blog</a>
+  </div>
+</section>
+""",
+    "/blog/direct-to-wall-printing-vs-wallpaper/"
+)
+
+# ── blog/direct-to-wall-printing-vs-vinyl.html ───────────────────────────
+
+PAGES["blog/direct-to-wall-printing-vs-vinyl.html"] = page(
+    "Direct-to-Wall Printing vs Vinyl Graphics",
+    "Placeholder article comparing direct-to-wall printing and vinyl graphics for internal and external branding surfaces.",
+    inner_hero("Blog", "Direct-to-Wall Printing vs Vinyl Graphics", "Posted Thu Sep 3 2026") + """
+<section class="section page-content" style="padding-top:3rem;">
+  <div class="container" style="max-width:900px;">
+    <img src="/assets/images/cta-banner.jpg" alt="Placeholder blog visual" style="width:100%;border-radius:var(--card-r);box-shadow:var(--sh-md);margin-bottom:2rem;">
+    <p style="font-size:1.05rem; margin-bottom:1.25rem;">Placeholder intro: This article compares direct-to-wall printing with vinyl graphics for adhesion reliability, edge lifting risk, and maintenance over time.</p>
+    <p style="margin-bottom:1.25rem;">Placeholder content block 1: Add use-case comparisons for cafes, offices, schools, healthcare, and retail spaces.</p>
+    <p style="margin-bottom:2rem;">Placeholder content block 2: Add practical guidance on where vinyl works best and where direct wall printing delivers better long-term value.</p>
+    <a href="/blog/" class="btn btn-outline">&larr; Back to Blog</a>
+  </div>
+</section>
+""",
+    "/blog/direct-to-wall-printing-vs-vinyl/"
+)
+
 # ── 404.html ──────────────────────────────────────────────────────────────
 
 PAGES["404.html"] = page(
@@ -1255,6 +1353,9 @@ _SLUGS = {
     "about.html":                     "about",
     "projects.html":                  "projects",
     "faqs.html":                      "faqs",
+    "blog.html":                      "blog",
+    "blog/direct-to-wall-printing-vs-wallpaper.html": "blog/direct-to-wall-printing-vs-wallpaper",
+    "blog/direct-to-wall-printing-vs-vinyl.html":     "blog/direct-to-wall-printing-vs-vinyl",
     "contact.html":                   "contact",
 }
 
@@ -1264,30 +1365,39 @@ _REDIR = ('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
           '<title>Redirecting...</title></head>'
           '<body><a href="{url}">Redirecting...</a></body></html>')
 
+_NO_REDIRECT = {
+  "blog/direct-to-wall-printing-vs-wallpaper.html",
+  "blog/direct-to-wall-printing-vs-vinyl.html",
+}
+
 # ─── Write all pages ─────────────────────────────────────────────────────────
 
 def write_page(rel_path, html):
-    slug = _SLUGS.get(rel_path)
-    if slug:
-        # Write page to directory/index.html for clean URLs
-        dir_path = os.path.join(ROOT, slug)
-        os.makedirs(dir_path, exist_ok=True)
-        with open(os.path.join(dir_path, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"  [ok] {slug}/")
-        # Write redirect at old .html path so bookmarks still work
-        old_path = os.path.join(ROOT, rel_path)
-        os.makedirs(os.path.dirname(old_path), exist_ok=True)
-        with open(old_path, "w", encoding="utf-8") as rf:
-            rf.write(_REDIR.format(url=f"/{slug}/"))
-        print(f"  [redir] {rel_path} → /{slug}/")
-    else:
-        # 404.html stays at root
-        full_path = os.path.join(ROOT, rel_path)
-        os.makedirs(os.path.dirname(full_path), exist_ok=True)
-        with open(full_path, "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"  [ok] {rel_path}")
+  slug = _SLUGS.get(rel_path)
+  if slug:
+    # Write page to directory/index.html for clean URLs
+    dir_path = os.path.join(ROOT, slug)
+    os.makedirs(dir_path, exist_ok=True)
+    with open(os.path.join(dir_path, "index.html"), "w", encoding="utf-8") as f:
+      f.write(html)
+    print(f"  [ok] {slug}/")
+
+    if rel_path in _NO_REDIRECT:
+      return
+
+    # Write redirect at old .html path so bookmarks still work
+    old_path = os.path.join(ROOT, rel_path)
+    os.makedirs(os.path.dirname(old_path), exist_ok=True)
+    with open(old_path, "w", encoding="utf-8") as rf:
+      rf.write(_REDIR.format(url=f"/{slug}/"))
+    print(f"  [redir] {rel_path} → /{slug}/")
+  else:
+    # 404.html stays at root
+    full_path = os.path.join(ROOT, rel_path)
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+    with open(full_path, "w", encoding="utf-8") as f:
+      f.write(html)
+    print(f"  [ok] {rel_path}")
 
 if __name__ == "__main__":
     print("\n=== Wall Envy Page Builder ===\n")
