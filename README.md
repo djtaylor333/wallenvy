@@ -1,6 +1,6 @@
 ﻿# Wall Envy Website
 
-Modern static website for [Wall Envy](https://www.wallenvy.com.au) — Any Design. Any Surface. Print the Impossible.
+Modern static website for [Wall Envy](https://www.wallenvy.com.au) — Any Design. Your Wall. Print the Impossible.
 
 ## Local Development
 

@@ -295,8 +295,8 @@ h1_updates = [
      'inner_hero("Services", \'Cafe, Restaurant &amp; <span class="gradient-text">Retail Wall Printing</span>\''),
     ('inner_hero("Services", \'Sports &amp; <span class="gradient-text">Sponsorship</span>\'',
      'inner_hero("Services", \'Sports, Gym &amp; <span class="gradient-text">Sponsorship Walls</span>\''),
-    ('inner_hero("Printing", \'Print on <span class="gradient-text">Any Surface</span>\'',
-     'inner_hero("Printing", \'Direct Printing on <span class="gradient-text">Any Surface</span>\''),
+    ('inner_hero("Printing", \'Print on <span class="gradient-text">Your Wall</span>\'',
+     'inner_hero("Printing", \'Direct Printing on <span class="gradient-text">Your Wall</span>\''),
 ]
 for old_h1, new_h1 in h1_updates:
     if old_h1 in c:

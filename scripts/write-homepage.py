@@ -80,6 +80,8 @@ HOMEPAGE = """\
             <a href="/services/schools/">Schools &amp; Education</a>
             <a href="/services/hospitality/">Hospitality, Cafes &amp; Retail</a>
             <a href="/services/sports/">Sports &amp; Sponsorship</a>
+<a href="/services/technical-specifications/">Technical Specifications</a>
+
           </div>
         </li>
         <li>
@@ -264,7 +266,7 @@ HOMEPAGE = """\
       <div class="reveal">
         <span class="section-label">Why Wall Envy</span>
         <h2 style="margin-bottom:1.25rem;">No Peeling. No Seams.<br><span class="gradient-text">No Compromise.</span></h2>
-        <p style="margin-bottom:2rem;">Traditional vinyl and wallpaper have had their day. Our German-engineered UV printing technology bonds directly to your surface &mdash; creating a flawless, permanent finish that lasts over a decade and withstands daily use.</p>
+        <p style="margin-bottom:2rem;">Traditional vinyl and wallpaper have had their day. Our  UV printing technology bonds directly to your surface &mdash; creating a flawless, permanent finish that lasts over a decade and withstands daily use.</p>
         <div class="feature-list">
           <div class="feature-item">
             <div class="feature-icon">&#10003;</div>
@@ -277,7 +279,7 @@ HOMEPAGE = """\
             <div class="feature-icon">&#128167;</div>
             <div>
               <h4>Scratch &amp; Water Resistant</h4>
-              <p>Hard-coat UV ink survives daily cleaning, humidity, and heavy use environments for 12+ years indoors.</p>
+              <p>Hard-coat UV ink survives daily cleaning, humidity, and heavy use environments for 8–10 years indoors and 3–5 years outdoors.</p>
             </div>
           </div>
           <div class="feature-item">
@@ -362,7 +364,7 @@ HOMEPAGE = """\
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo">Wall Envy</a>
-        <p>Any Design. Any Surface. Print the Impossible.<br>Serving the Central Coast, Newcastle &amp; Hunter regions of NSW, Australia.</p>
+        <p>Any Design. Your Wall. Print the Impossible.<br>Serving the Central Coast, Newcastle &amp; Hunter regions of NSW, Australia.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -383,7 +385,9 @@ HOMEPAGE = """\
           <li><a href="/services/healthcare/">Healthcare</a></li>
           <li><a href="/services/schools/">Schools &amp; Education</a></li>
           <li><a href="/services/hospitality/">Hospitality &amp; Retail</a></li>
-          <li><a href="/services/sports/">Sports &amp; Sponsorship</a></li>
+          <li><a href="/services/sports/">Sports &amp; Sponsorship</a>
+<a href="/services/technical-specifications/">Technical Specifications</a>
+</li>
         </ul>
       </div>
       <div class="footer-col">

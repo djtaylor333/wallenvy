@@ -63,6 +63,8 @@ NAV = """
             <a href="/services/schools/">Schools &amp; Education</a>
             <a href="/services/hospitality/">Hospitality, Cafes &amp; Retail</a>
             <a href="/services/sports/">Sports &amp; Sponsorship</a>
+<a href="/services/technical-specifications/">Technical Specifications</a>
+
           </div>
         </li>
         <li>
@@ -123,7 +125,7 @@ FOOTER = """
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="/" class="footer-logo">Wall Envy</a>
-        <p>Any Design. Any Surface. Print the Impossible.<br>
+        <p>Any Design. Your Wall. Print the Impossible.<br>
            Serving the Central Coast, Newcastle &amp; Hunter regions of NSW, Australia.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/people/Wallenvy/61592586241845/" target="_blank" rel="noopener" aria-label="Facebook">
@@ -145,7 +147,9 @@ FOOTER = """
           <li><a href="/services/healthcare/">Healthcare</a></li>
           <li><a href="/services/schools/">Schools &amp; Education</a></li>
           <li><a href="/services/hospitality/">Hospitality &amp; Retail</a></li>
-          <li><a href="/services/sports/">Sports &amp; Sponsorship</a></li>
+          <li><a href="/services/sports/">Sports &amp; Sponsorship</a>
+<a href="/services/technical-specifications/">Technical Specifications</a>
+</li>
         </ul>
       </div>
       <div class="footer-col">
@@ -259,7 +263,7 @@ PAGES = {}
 PAGES["services.html"] = page(
     "Direct-to-Wall Printing Services | Central Coast & Newcastle",
     "Explore Wall Envy's direct-to-wall printing services for businesses, schools, hospitality, healthcare, sports and homes across Central Coast & Newcastle.",
-    inner_hero("What We Offer", 'Direct-to-Wall <span class="gradient-text">Printing Services</span>', "We print on any surface for any industry. Explore what we can do for your space across the Central Coast, Newcastle and Hunter Region.") + """
+    inner_hero("What We Offer", 'Direct-to-Wall <span class="gradient-text">Printing Services</span>', "We print on many surfaces for any industry. Explore what we can do for your space across the Central Coast, Newcastle and Hunter Region.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <p class="reveal" style="max-width:720px;margin-bottom:3rem;">We provide printing services on a variety of surfaces to a variety of businesses. We aren't limited to commercial — we can do residential, small businesses, hospitals, restaurants, schools, stadiums — anywhere you can think of. Or if you need a custom design, we can work with you on something that perfectly suits your space.</p>
@@ -267,7 +271,7 @@ PAGES["services.html"] = page(
       <a href="/services/commercial/" class="service-card reveal">
         <div class="service-icon">&#127970;</div>
         <h3>Commercial &amp; Office Spaces</h3>
-        <p>German-engineered UV printing that transforms reception walls, boardrooms, and retail spaces with powerful, permanent brand imagery.</p>
+        <p> UV printing that transforms reception walls, boardrooms, and retail spaces with powerful, permanent brand imagery.</p>
         <span class="service-card-link">Learn more &#8594;</span>
       </a>
       <a href="/services/residential/" class="service-card reveal reveal-delay-1">
@@ -332,7 +336,7 @@ PAGES["services/commercial.html"] = page(
           </div>
           <div class="feature-item reveal reveal-delay-3">
             <div class="feature-icon">&#127959;</div>
-            <div><h4>Any Surface</h4><p>Plasterboard, raw brick, glass, concrete, metal panels — our technology adapts flawlessly to any commercial surface.</p></div>
+            <div><h4>Many Surfaces</h4><p>Plasterboard, raw brick, glass, concrete, metal panels — our technology adapts flawlessly to any commercial surface.</p></div>
           </div>
         </div>
       </div>
@@ -428,7 +432,7 @@ PAGES["services/healthcare.html"] = page(
           </div>
           <div class="feature-item reveal reveal-delay-2">
             <div class="feature-icon">&#127807;</div>
-            <div><h4>Safe, Low-VOC &amp; Odourless</h4><p>German-engineered eco-inks, non-toxic and odourless. Zero off-gassing — patients can be treated safely the very next day.</p></div>
+            <div><h4>Safe, Low-VOC &amp; Odourless</h4><p> eco-inks, non-toxic and odourless. Zero off-gassing — patients can be treated safely the very next day.</p></div>
           </div>
           <div class="feature-item reveal reveal-delay-3">
             <div class="feature-icon">&#128149;</div>
@@ -607,7 +611,7 @@ PAGES["services/sports.html"] = page(
 PAGES["printing.html"] = page(
     "Wall Printing Surfaces — Brick, Glass, Wood & More",
     "Explore surfaces Wall Envy can print on, including brick, glass, concrete, metal, wood and painted walls using direct-to-surface printing on the Central Coast & Hunter.",
-    inner_hero("Printing", 'Direct Printing on <span class="gradient-text">Any Surface</span>', "We're called 'direct-to-wall' — but we're certainly not limited to walls.") + """
+    inner_hero("Printing", 'Direct Printing on <span class="gradient-text">Many Surface</span>', "We're called 'direct-to-wall' — but we're certainly not limited to walls.") + """
 <section class="section page-content" style="padding-top:3rem;">
   <div class="container">
     <p class="reveal" style="font-size:1.05rem;max-width:720px;margin-bottom:3rem;">We can print on all kinds of surfaces — it doesn't have to be a blank white wall. We can print on glass, wood, canvas, metal, walls, and floors. If a surface is flat and vertical (or can be propped up vertically), there is a very good chance we can print stunning, high-definition art right onto it.</p>
@@ -721,7 +725,7 @@ PAGES["printing/vehicle-branding.html"] = page(
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
       <div>
-        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">Your business vehicle is a moving billboard, seen by thousands of potential customers every day. But traditional vehicle signage has a major flaw: vinyl wraps and stickers inevitably bubble, fade, and peel at the edges, making your brand look tired and unprofessional. Wall Envy uses advanced, German-engineered direct-to-surface printing technology to bypass vinyl completely — printing your high-definition logos, contact details, and graphics directly onto the side of your van, truck, or trailer. Permanent, seamless, and built to withstand harsh Australian conditions.</p>
+        <p class="reveal" style="font-size:1.05rem;margin-bottom:2rem;">Your business vehicle is a moving billboard, seen by thousands of potential customers every day. But traditional vehicle signage has a major flaw: vinyl wraps and stickers inevitably bubble, fade, and peel at the edges, making your brand look tired and unprofessional. Wall Envy uses advanced,  direct-to-surface printing technology to bypass vinyl completely — printing your high-definition logos, contact details, and graphics directly onto the side of your van, truck, or trailer. Permanent, seamless, and built to withstand harsh Australian conditions.</p>
         <div class="feature-list">
           <div class="feature-item reveal">
             <div class="feature-icon">&#10060;</div>
@@ -1159,7 +1163,7 @@ PAGES["about.html"] = page(
             <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(0,212,255,0.05));border:1px solid rgba(0,212,255,0.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">&#128296;</div>
             <div><h4 style="margin:0;">Jon</h4><span style="font-size:0.75rem;color:var(--cyan);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;">Structural &amp; Project Expertise</span></div>
           </div>
-          <p style="font-size:0.9rem;">With a strong background in skilled carpentry and high-end building projects, Jon brings a precise, structural eye for detail to every job. He understands the mechanics of residential and commercial spaces, ensuring that every print is executed flawlessly on any surface.</p>
+          <p style="font-size:0.9rem;">With a strong background in skilled carpentry and high-end building projects, Jon brings a precise, structural eye for detail to every job. He understands the mechanics of residential and commercial spaces, ensuring that every print is executed flawlessly on many surfaces.</p>
         </div>
         <div class="card card-glow reveal reveal-delay-1" style="border-top:3px solid var(--magenta);">
           <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
